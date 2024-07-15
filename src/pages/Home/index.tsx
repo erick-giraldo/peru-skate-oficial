@@ -1,6 +1,13 @@
 import Link from "next/link";
 
-const Hero = () => {
+
+interface Heroprops {
+  src: string;
+}
+
+const Hero: React.FC<Heroprops> = ({
+  src
+}) => {
   return (
     <>
         <section
@@ -17,7 +24,7 @@ const Hero = () => {
             loop
             tabindex="-1"
             autoPlay
-            src="/video/home.mp4"
+            src={src}
           ></video>
         </div>
         <div className="relative z-10 flex items-center justify-center h-full">

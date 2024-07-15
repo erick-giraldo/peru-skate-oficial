@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 27" width="138" height="27">
+	<title>logo-2-svg</title>
+	<defs>
+		<image  width="26" height="25" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAZCAMAAAAYAM5SAAAAAXNSR0IB2cksfwAAAnZQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Kjcv+AAAANJ0Uk5TAAM5en2Ed08ETZVdLC9YlF4GHgGaZWEwNRc6N2scAJKTKyGiGonTZxmhlz90jVqIdhv87dKjzD4nNGYkh4oYXFvo7OvHCzaqSyNuaX97PYwuV8TJPKjfnDIOThY4CR9RgdqzKrGprXBSfCJtkLXx5tYM4ilW1+ruEsLctx0ovEOLaF87Ed3j5CXLsA9KFRBTr9F4Arrg0GwNnp2bpECAxt5HVHPZ2+WWwWOFQn4UecPpE8UtWc3w4b51BWBM2ETAggePZKYxmKBqtEGRhshIu0Zib1uoGwAAAkBJREFUeJxjZIABRij4AReAS3FCpT6gSQmCBF8DGWLved4ziDMyPodKSUE1/GVgYXzELPOJn5HxJkRKAyj64q2kMCPjA0XGT/cMQapOg6Q4xATZv3MBefeVGBl/szEetgObsBsoZc/+gY+ZkfHJayOgwK13lmCJP6xrgFIWshcNGBn3uO7n+CquB9K73Qskue4DI0My4yG5m29+S7kz7ndiZFzIkMD4hRfiKot7fnynzRZY/TmmorEm94bI3XeC6kIPuUUZPzJWMN5SZ2RsqT3817GJPVgV6o0Fibt+MHa8PePBeE27ydaJsZg9eFmUybPtnwuBwQUMHOFGRsb3QozTfeQYGdbKmV06kf4/de5kC7Pyf4wxjkfsGM8IXtgcqyr/bm4pY8G7xTc1GOcnXV7FGOXL2FOwKDnl89wzjoxN9VP8C9cyMh78fyn/AeNGxsMG8/NrH791u55muML4huqPmtnnZAwY379mVCqXm50Wt9h9V3NdfVMJgxRTqr+IlqGSPNBvDMU+z/p7rt/xu6a9MoKxq/z3HsOI7WtjGaP/MDIcZN+oq+wiy6dQVFd8Ystrx6uJL+T/6/j8eQuMFCUXK9b2eIMptxdVHZuXIN2y4EfP4+9c/uD4mqH1e2qFGUMhj2L789R+hnMvu03tli2FxLLwgq5Jvqxfau0YjN3Pfv9h5vdQNwOWNoQ3Vd/nmtcgF8/QffZt2ZynSMlG+NcU1V6PXZ7ts1oL4/dsnv0IJbEJ8OR8Ea9jLNs0XR8qAgBbRM3xgT/TNgAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 14px;fill: #000000;font-weight: 700;font-family: "DejaVuSans-Bold", "DejaVu Sans" } 
+	</style>
+	<use id="Background" href="#img1" x="2" y="1"/>
+	<text id="PERU SKATE" style="transform: matrix(1,0,0,1,36,18)" >
+		<tspan x="0" y="0" class="t0">P</tspan><tspan  y="0" class="t0">E</tspan><tspan  y="0" class="t0">R</tspan><tspan  y="0" class="t0">U</tspan><tspan  y="0" class="t0"> </tspan><tspan  y="0" class="t0">S</tspan><tspan  y="0" class="t0">K</tspan><tspan  y="0" class="t0">A</tspan><tspan  y="0" class="t0">T</tspan><tspan  y="0" class="t0">E
+</tspan>
+	</text>
+</svg>
