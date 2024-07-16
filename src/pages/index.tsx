@@ -1,7 +1,6 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+
 import Header from "./Header";
-import Hero from "./Home";
+import Hero from "./Hero";
 import Footer from "./Footer";
 import Features from "./Features";
 import Brands from "./Brands";
@@ -11,10 +10,15 @@ import Blog from "./Blog";
 import Contact from "./Contact";
 import Testimonials from "./Testimonials";
 import Pricing from "./Pricing";
+import ScrollUp from "@/components/common/ScrollUp";
+import ScrollToTop from "@/components/scrollToTop";
+import WhatsAppButton from "@/components/WhatsAppButton";
+
 
 export default function Home() {
   return (
     <>
+      <ScrollUp />
       <Header />
       <Hero src="/video/home.mp4" />
       <Features />
@@ -26,7 +30,8 @@ export default function Home() {
       <Blog />
       <Contact />
       <Footer />
-
+      <ScrollToTop />
+      <WhatsAppButton />
     </>
   );
 }
