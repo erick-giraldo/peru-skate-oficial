@@ -8,6 +8,7 @@ export default function WhatsAppButton() {
     phoneNumber="*51945970045"
     chatMessage="Hola somos Perú Skate, en que podemos ayudarte?"
     placeholder="Escribe un mensaje... "
+    buttonClassName='mb-12 !right-6'
     />
   );
 };

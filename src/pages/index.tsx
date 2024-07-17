@@ -22,8 +22,8 @@ export default function Home() {
       <Header />
       <Hero src="/video/home.mp4" />
       <Features />
-      <Brands />
-      <AboutSectionOne />
+      {/* <Brands />
+      <AboutSectionOne /> */}
       <AboutSectionTwo />
       <Testimonials />
       <Pricing />
