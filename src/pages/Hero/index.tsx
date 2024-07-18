@@ -17,12 +17,12 @@ const Hero: React.FC<Heroprops> = ({
         <div className="absolute inset-0 z-0">
           <video
             className="w-full h-full object-cover"
-            crossorigin="anonymous"
-            playsinline=""
+            crossOrigin="anonymous"
+            playsInline 
+            tabIndex={0}
             preload="auto"
             muted
             loop
-            tabindex="-1"
             autoPlay
             src={src}
           ></video>

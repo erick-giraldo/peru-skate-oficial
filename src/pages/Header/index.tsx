@@ -25,7 +25,7 @@ const NAV_ITEMS :NavItem[]= [
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(true);
   return (
-    <header className=" flex flex-col h-14 w-full">
+    <header className=" flex flex-col h-14 w-full fixed z-30 top-0">
       <div className="w-full lg:p-4  justify-end bg-header-primary hidden lg:flex drop-shadow-lg">
         <div className="flex items-center lg:gap-4">
           <a
