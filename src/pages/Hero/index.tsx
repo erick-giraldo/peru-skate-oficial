@@ -1,18 +1,15 @@
 import Link from "next/link";
 
-
-interface Heroprops {
+interface HeroProps {
   src: string;
 }
 
-const Hero: React.FC<Heroprops> = ({
-  src
-}) => {
+export default function Hero({ src }: HeroProps) {
   return (
     <>
-        <section
+      <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white pb-16 sm:mt-[34px] md:pb-[120px]  xl:pb-[160px] md:mt-[34px] 2xl:pb-[200px] 2xl:mt-[34px]"
+        className="relative z-10 overflow-hidden bg-white pb-16 sm:mt-[34px] md:pb-[120px] xl:pb-[160px] md:mt-[34px] 2xl:pb-[200px] 2xl:mt-[34px]"
       >
         <div className="absolute inset-0 z-0">
           <video
@@ -32,7 +29,7 @@ const Hero: React.FC<Heroprops> = ({
             <h1 className="mb-5 text-3xl font-bold leading-tight text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
               Free and Open-Source Next.js Template for Startup & SaaS
             </h1>
-            <p className="mb-12 text-white !leading-relaxed text-body-color  sm:text-lg md:text-xl">
+            <p className="mb-12 text-white !leading-relaxed text-body-color sm:text-lg md:text-xl">
               Startup is free Next.js template for startups and SaaS
               business websites comes with all the essential pages,
               components, and sections you need to launch a complete
@@ -57,6 +54,4 @@ const Hero: React.FC<Heroprops> = ({
       </section>
     </>
   );
-};
-
-export default Hero;
+}

@@ -22,7 +22,7 @@ const NAV_ITEMS :NavItem[]= [
   { href: "#", label: "Contacto" },
 ];
 
-const Header = () => {
+export default function Header(){
   const [navbarOpen, setNavbarOpen] = useState(true);
   return (
     <header className=" flex flex-col h-14 w-full fixed z-30 top-0">
@@ -266,5 +266,3 @@ const MenuItems = () => (
     ))}
   </div>
 );
-
-export default Header;
