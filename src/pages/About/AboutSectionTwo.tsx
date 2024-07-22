@@ -32,14 +32,14 @@ const AboutSectionTwo = () => {
                 <div>
                   <div className="HcOXKn SxM0TO QxJLC3 comp-kpql7zd5 wixui-rich-text">
                     <h2 className="text-2xl font-bold !leading-tight text-white">
-                      Fraco Ruiz
+                      Franco Ruiz
                     </h2>
                   </div>
                   <div className="HcOXKn SxM0TO QxJLC3 comp-kpql9p9a wixui-rich-text">
                     <p className="text-base font-medium leading-relaxed text-white">
                       Fundador & Instructor
                       <br className="wixui-rich-text__text" />
-                      Peru Skateboarder del año 2017
+                      Peru Skate del año 2017
                       <br className="wixui-rich-text__text" />
                       Entrenador Profesional
                     </p>
