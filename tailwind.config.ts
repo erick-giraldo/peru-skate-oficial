@@ -14,11 +14,11 @@ const config = {
       center: true,
       padding: "1rem",
       screens: {
-        'xs': '375px',
+        xs: '375px',
         "3xl": "1400px",
         sm: "575px",
       // => @media (min-width: 576px) { ... }
-
+        sm2:"575px",
       md: "768px",
       // => @media (min-width: 768px) { ... }
 

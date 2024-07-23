@@ -1,4 +1,5 @@
-import { Brand } from "@/types/brand";
+import { Brand } from "@/components/types";
+
 
 const brandsData: Brand[] = [
   {

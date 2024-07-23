@@ -13,6 +13,7 @@ import Pricing from "./Pricing";
 import ScrollUp from "@/components/common/ScrollUp";
 import ScrollToTop from "@/components/scrollToTop";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import InstagramPage from "./Instagram";
 
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
       <AboutSectionOne /> */}
       <AboutSectionTwo />
       <Testimonials />
+      <InstagramPage />
       <Pricing />
       <Blog />
       <Contact />
