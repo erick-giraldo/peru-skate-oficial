@@ -8,11 +8,11 @@ import AboutSectionOne from "./About/AboutSectionOne";
 import AboutSectionTwo from "./About/AboutSectionTwo";
 import Blog from "./Blog";
 import Contact from "./Contact";
-import Testimonials from "./Testimonials";
 import Pricing from "./Pricing";
 import ScrollUp from "@/components/common/ScrollUp";
 import ScrollToTop from "@/components/scrollToTop";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Testimonials from "./Testimonials";
 
 
 export default function Home() {
@@ -22,12 +22,12 @@ export default function Home() {
       <Header />
       <Hero src="/video/home.mp4" />
       <Features />
-      <Brands />
+      {/* <Brands /> */}
       {/* <AboutSectionOne /> */}
       <AboutSectionTwo />
       {/* <Testimonials /> */}
       <Pricing />
-      <Blog />
+      {/* <Blog /> */}
       <Contact />
       <Footer />
       <ScrollToTop />

@@ -1,6 +1,7 @@
+import featuresData from "@/lib/Features/featuresData";
 import SectionTitle from "../Common/SectionTitle";
-import SingleFeature from "./SingleFeature";
-import featuresData from "./featuresData";
+import SingleFeature from "@/lib/Features/SingleFeature";
+
 
 export default function Features (){
   return (

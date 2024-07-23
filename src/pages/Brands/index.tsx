@@ -1,7 +1,7 @@
 
 import Image from "next/image";
-import brandsData from "./brandsData";
 import { Brand } from "@/components/types/brand";
+import brandsData from "@/lib/Brands/brandsData";
 
 export default function Brands () {
   return (

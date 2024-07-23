@@ -1,6 +1,6 @@
+import SingleBlog from "@/lib/Blog/SingleBlog";
 import SectionTitle from "../Common/SectionTitle";
-import SingleBlog from "./SingleBlog";
-import blogData from "./blogData";
+import blogData from "@/lib/Blog/blogData";
 
 export default function Blog(){
   return (
