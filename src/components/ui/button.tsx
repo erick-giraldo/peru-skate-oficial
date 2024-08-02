@@ -11,7 +11,8 @@ type buttonTypes =
 | "nav"
 | "secondary"
 | "ghost"
-| "link";
+| "link"
+| "skt";
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
@@ -29,6 +30,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        skt: "relative w-1/2 mx-auto inline-flex items-center justify-center bg-[#f44336] border border-white text-white overflow-hidden rounded-md h-10 px-4 py-2 transition-colors duration-300 hover:bg-white hover:text-black hover:border-black after:absolute after:inset-0 after:bg-white after:transform after:translate-x-full after:transition-transform after:duration-300 after:z-10 after:content-[''] hover:after:translate-x-[-100%]"
       },
       size: {
         default: "h-10 px-4 py-2",

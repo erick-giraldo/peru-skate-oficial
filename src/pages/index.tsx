@@ -13,6 +13,7 @@ import ScrollUp from "@/components/common/ScrollUp";
 import ScrollToTop from "@/components/scrollToTop";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Testimonials from "./Testimonials";
+import Carousel from "./Carousel";
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       {/* <Brands /> */}
       {/* <AboutSectionOne /> */}
       <AboutSectionTwo />
+      <Carousel />
       {/* <Testimonials /> */}
       <Pricing />
       {/* <Blog /> */}
