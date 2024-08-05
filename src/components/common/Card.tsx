@@ -10,13 +10,11 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ image, title, sub, description }) => {
   return (
-    <div className="relative shadow-md overflow-hidden group">
+    <div className="relative max-w-[373px] max-h-[503px] shadow-md overflow-hidden group">
       <div className="overflow-hidden">
         <img
           src={image}
           alt={title}
-          //   width={373}
-          //   height={503}
           className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
         />
       </div>
