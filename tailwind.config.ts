@@ -33,6 +33,10 @@ const config = {
       },
     },
     extend: {
+      backgroundImage:{
+        'pl1':'url(/images/skateboard-art-1.jpg)',
+        'pl2':'url(/images/tablas-varios.jpeg)'
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
