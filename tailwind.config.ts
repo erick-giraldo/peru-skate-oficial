@@ -38,6 +38,7 @@ const config = {
         'pl2':'url(/images/tablas-varios.jpeg)'
       },
       colors: {
+        navBurger:"#ff3131",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -8,10 +8,10 @@ const MenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
     height="24"
     viewBox="0 0 24 24"
     fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
+    stroke="white"
+    strokeWidth="3"
+    strokeLinecap="square"
+    strokeLinejoin="inherit"
   >
     <line x1="4" x2="20" y1="12" y2="12" />
     <line x1="4" x2="20" y1="6" y2="6" />

@@ -15,13 +15,14 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import Testimonials from "./Testimonials";
 import Carousel from "./Carousel";
 import Class from "./Class";
+import Header2 from "./Header2";
 
 
 export default function Home() {
   return (
     <>
       <ScrollUp />
-      <Header />
+      <Header2 />
       <Hero src="/video/home.mp4" />
       <Features />
       {/* <Brands /> */}

@@ -187,14 +187,14 @@ export default function Header(){
         <div className="flex justify-end gap-4 lg:hidden p-2 md:p-6 z-10">
           <NavigationMenu />
         </div>
-        <div className="ml-4 shadow-md absolute p-2 bg-white rounded-full block lg:flex lg:space-x-12">
+        <div className="ml-4 absolute p-2 bg-white  block lg:flex lg:space-x-12">
           <Link href="/" className={`header-logo block w-full  `}>
             <Image
               src="/images/logo/logo-black.png"
               alt="logo"
               width={140}
               height={140}
-              className="lg:w-20 w-16 dark:hidden"
+              className="lg:w-48 w-16 dark:hidden"
             />
           </Link>
         </div>
