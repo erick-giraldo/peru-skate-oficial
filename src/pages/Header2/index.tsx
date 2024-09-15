@@ -36,7 +36,7 @@ export default function Header2(){
               alt="logo"
               width={140}
               height={140}
-              className="lg:w-48 w-32 dark:hidden"
+              className="w-48 dark:hidden"
             />
           </Link>
         </div>
