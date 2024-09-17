@@ -12,6 +12,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
             alt="about-image"
             width={424}
             height={240}
+            className="h-[271.63px]  object-cover"
           />
         </div>
         <h3 className="mb-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">

@@ -25,7 +25,7 @@ export default function Home() {
       <ScrollUp />
       <Header2 />
       <Hero src="/video/home.mp4" />
-      <Us />
+      {/* <Us /> */}
       <Features />
       {/* <Brands /> */}
       {/* <AboutSectionOne /> */}
