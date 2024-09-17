@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 interface CardProps {
   image: string;
@@ -12,7 +13,9 @@ const Card: React.FC<CardProps> = ({ image, title, sub, description }) => {
   return (
     <div className="relative max-w-[373px] max-h-[503px] shadow-md overflow-hidden group">
       <div className="overflow-hidden">
-        <img
+        <Image
+          width={373}
+          height={503}
           src={image}
           alt={title}
           className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"

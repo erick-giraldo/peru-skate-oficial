@@ -7,38 +7,35 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
+    screens: {
+      'xs': '375px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+      '3xl': '1920px',
+    },
     container: {
       center: true,
-      padding: "1rem",
-      screens: {
-        'xs': '375px',
-        "3xl": "1400px",
-        sm: "575px",
-      // => @media (min-width: 576px) { ... }
-
-      md: "768px",
-      // => @media (min-width: 768px) { ... }
-
-      lg: "992px",
-      // => @media (min-width: 992px) { ... }
-
-      xl: "1200px",
-      // => @media (min-width: 1200px) { ... }
-
-      "2xl": "1400px",
-      // => @media (min-width: 1400px) { ... }
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
       },
     },
     extend: {
-      backgroundImage:{
-        'pl1':'url(/images/skateboard-art-1.jpg)',
-        'pl2':'url(/images/tablas-varios.jpeg)'
+      backgroundImage: {
+        'pl1': 'url(/images/skateboard-art-1.jpg)',
+        'pl2': 'url(/images/tablas-varios.jpeg)'
       },
       colors: {
-        navBurger:"#ff3131",
+        navBurger: "#ff3131",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -72,9 +69,8 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        header:{
-          primary:"#f2f8ff",
-
+        header: {
+          primary: "#f2f8ff",
         }
       },
       borderRadius: {
@@ -95,6 +91,11 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      fontFamily: {
+        graffiti: ['"Sprite Graffiti"', 'sans-serif'],
+        edo: ['"Edo"', 'sans-serif'],
+        dreadful: ['"Dreadful"', 'sans-serif'],
       },
     },
   },

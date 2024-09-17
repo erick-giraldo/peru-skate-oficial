@@ -1,9 +1,35 @@
+
+
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
 
+
+@font-face {
+  font-family: 'Sprite Graffiti';
+  src: url('/fonts/sprite-graffiti.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Edo';
+  src: url('/fonts/edo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dreadful';
+  src: url('/fonts/Dreadful-Regular') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
+
   @layer base {
     :root {
       --background: 0 0% 100%;

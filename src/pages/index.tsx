@@ -16,6 +16,7 @@ import Testimonials from "./Testimonials";
 import Carousel from "./Carousel";
 import Class from "./Class";
 import Header2 from "./Header2";
+import Us from "./Us";
 
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <ScrollUp />
       <Header2 />
       <Hero src="/video/home.mp4" />
+      <Us />
       <Features />
       {/* <Brands /> */}
       {/* <AboutSectionOne /> */}

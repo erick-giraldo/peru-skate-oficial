@@ -46,7 +46,7 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
   };
 
   return (
-    <div className="relative w-full  mx-auto px-8">
+    <div className="relative w-full  mx-auto">
       <Slider {...settings}>
         {items.map((item, index) => (
           <div key={index} className="p-2 gap-4">

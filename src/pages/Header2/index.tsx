@@ -7,53 +7,72 @@ import Image from "next/image";
 import { useState } from "react";
 import { Navbar } from "@/components/common/Navbar";
 import { NavItem } from "@/components/models";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import SocialIcons from "@/components/common/SocialIcons";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const NAV_ITEMS :NavItem[]= [
-  { href: "#", label: "Home" },
-  { href: "#", label: "Clases", sub_label: ['Classes', 'Programas', 'Servicios']  },
-  { href: "#", label: "Eventos"},
-  { href: "#", label: "Videos" },
-  { href: "#", label: "Contacto" },
+const NAV_ITEMS: NavItem[] = [
+  { href: "#", label: "Inicio" },
+  {
+    href: "#",
+    label: "Clases",
+    sub_label: ["Classes", "Programas", "Servicios"],
+  },
+  { href: "#", label: "Productos" },
+  { href: "#instructors", label: "Profesores" },
+  { href: "#", label: "Activaciones" },
 ];
 
-export default function Header2(){
+export default function Header2() {
   const [navbarOpen, setNavbarOpen] = useState(true);
   return (
-    <header className=" flex flex-col h-14 w-full fixed z-30 top-0">
-      <div
-        className={`flex flex-col justify-center z-30  w-full  border-b-[.5px] border-body-color/50 bg-white  lg:py-6 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-white lg:p-0 `}
-      >
-        <div className="flex justify-end gap-4 lg:hidden px-5  py-4 md:p-6 z-10 h-[72px]">
-          <NavigationMenu />
-        </div>
-        <div className="ml-4 absolute p-2 block lg:flex lg:space-x-12">
-          <Link href="/" className="header-logo block w-full">
+    <header className="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-md">
+      <div className="container mx-auto px-4 lg:px-10">
+        <div className="flex items-center justify-between h-[72px] lg:h-24">
+          <Link href="/" className="header-logo flex items-center">
             <Image
               src="/images/logo/logo-black.png"
               alt="logo"
               width={140}
               height={140}
-              className="w-48 dark:hidden"
+              className="w-48"
             />
           </Link>
-        </div>
-        <div className="hidden absolute bg-white  h-[72px] lg:flex items-center  right-10">
-          <Navbar data={NAV_ITEMS}/>
+
+          <nav className="hidden lg:block">
+            <Navbar data={NAV_ITEMS} />
+          </nav>
+
+          <div className="flex items-center">
+            <div className="hidden lg:block">
+              <SocialIcons />
+            </div>
+            <div className="lg:hidden ml-4">
+              <NavigationMenu />
+            </div>
+          </div>
         </div>
       </div>
     </header>
   );
-};
+}
 
 const NavigationMenu = () => (
   <>
     <Sheet>
       <SheetTrigger asChild>
         <div className="bg-navBurger rounded">
-          <Button variant="nav" size="default" className="rounded-full border-none py-0 px-2 w-[42.5px] h-[42.5px]">
+          <Button
+            variant="nav"
+            size="default"
+            className="rounded-full border-none py-0 px-2 w-[42.5px] h-[42.5px]"
+          >
             <MenuIcon className="h-5 w-5" />
           </Button>
         </div>
@@ -75,10 +94,10 @@ const MenuItems = () => (
         {item.sub_label ? (
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value={item.label} className="border-none">
-              <AccordionTrigger className="flex items-center py-2 text-[1rem] font-semibold w-full hover:no-underline">
+              <AccordionTrigger className="font-dreadful flex items-center py-2 text-[1rem] font-semibold w-full hover:no-underline">
                 {item.label}
               </AccordionTrigger>
-              <AccordionContent className="pl-4">
+              <AccordionContent className="pl-4 font-dreadful ">
                 {item.sub_label.map((subItem, subIndex) => (
                   <Link
                     key={subIndex}
@@ -94,7 +113,7 @@ const MenuItems = () => (
         ) : (
           <Link
             href={item.href}
-            className="flex items-center py-2 text-lg font-semibold w-full"
+            className="font-dreadful flex items-center py-2 text-lg font-semibold w-full"
             prefetch={false}
           >
             {item.label}

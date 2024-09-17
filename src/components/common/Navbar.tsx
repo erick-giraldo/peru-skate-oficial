@@ -1,32 +1,41 @@
+import { useRouter } from 'next/router';
 import {
   Menubar,
-  MenubarCheckboxItem,
   MenubarContent,
   MenubarItem,
   MenubarMenu,
-  MenubarRadioGroup,
-  MenubarRadioItem,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarSub,
-  MenubarSubContent,
-  MenubarSubTrigger,
   MenubarTrigger,
 } from "@/components/ui/menubar";
 import { NavItem } from "@/components/models";
 
 export const Navbar = ({ data }: { data: NavItem[] }) => {
+  const router = useRouter();
+  const handleClick = (href: string) => {
+    router.push(href);
+  };
+
   return (
-    <Menubar className="border-none gap-8 text-2xl">
+    <Menubar className="border-none gap-14 font-dreadful ">
       {data.map((item, index) => (
-        <MenubarMenu key={index}>
-          <MenubarTrigger className="text-2xl">{item.label}</MenubarTrigger>
+        <MenubarMenu key={index} >
+           <div
+            className="text-lg cursor-pointer"
+            onClick={() => handleClick(item.href)}
+          >
+          <MenubarTrigger className="text-[27px]">{item.label}</MenubarTrigger>
+          </div>
           {item.sub_label && (
             <MenubarContent>
               {item.sub_label.map((subItem, subIndex) => (
+                 <div
+                 key={subIndex}
+                 className="text-lg cursor-pointer"
+                 onClick={() => handleClick(item.href)}
+               >
                 <MenubarItem key={subIndex} className="text-lg">
                   {subItem}
                 </MenubarItem>
+                </div>
               ))}
             </MenubarContent>
           )}
