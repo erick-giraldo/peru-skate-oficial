@@ -34,8 +34,13 @@ const config = {
         'pl1': 'url(/images/skateboard-art-1.jpg)',
         'pl2': 'url(/images/tablas-varios.jpeg)'
       },
+      rotate: {
+        '20': '20deg',
+        '-20': '-20deg',
+      },
       colors: {
         navBurger: "#ff3131",
+        customBlue: 'rgba(0, 19, 92, 0.3)',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

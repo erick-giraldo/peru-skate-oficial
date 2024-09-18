@@ -5,24 +5,29 @@ const AboutSectionTwo = () => {
   return (
     <section className="pt-16 md:pt-20 lg:pt-28 bg-[#2f76b4]">
       <div className="container">
-        <div className="-mx-4 flex flex-wrap items-end">
+        <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 md:w-2/3">
             <div className="w-full">
               <div className="mb-9">
-                <h2 className="mb-4 text-whitemb-4 text-3xl font-bold !leading-tight text-white sm:text-4xl md:text-[45px]">
-                  Quienes somos
+                <h2 className="mb-4 text-3xl !leading-tight text-white sm:text-4xl md:text-[55px] font-dreadful">
+                Nuestra Historia
                 </h2>
                 <p className="text-base font-medium leading-relaxed text-white sm:text-lg sm:leading-relaxed">
-                  La escuela de skate Young Guns fue fundada por el skater
-                  profesional Simon Thorp en 2010. Junto con un equipo de los
-                  mejores skaters de Nueva Zelanda, brindamos clases de skate
-                  profesional y oportunidades al creciente número de jóvenes
-                  interesados ​​en el skate. Los beneficios de nuestras clases
-                  incluyen desarrollo de confianza y autoestima, mejor
-                  equilibrio, coordinación y mejor comportamiento dentro y fuera
-                  de la escuela. Además, los niños aprenden a divertirse sobre
-                  una patineta. Desde 2010 hemos impartido más de 6.000 clases
-                  con la asistencia de más de 100.000 Young Guns.
+                  En 2012, tres apasionados del skateboarding unieron sus
+                  fuerzas para fundar nuestra escuela, con el objetivo de
+                  impulsar el talento local y elevar el nivel de este deporte en
+                  Perú. Certificados por ISCP, SKATZ y la FDNPP, nuestros
+                  instructores no solo son expertos, sino también campeones en
+                  las categorías Amateur, Open y Pro. A lo largo de los años,
+                  hemos cosechado múltiples premios en competencias de alto
+                  nivel como el VANS Pro, el Converse Championship y el Circuito
+                  Nacional de Bowl, consolidando a nuestra escuela como un
+                  referente en la escena del skateboarding. Más allá de los
+                  trofeos, nuestra misión es formar a la próxima generación de
+                  riders, enseñando no solo trucos, sino también valores de
+                  disciplina, perseverancia y trabajo en equipo. Hoy, seguimos
+                  forjando campeones, donde cada truco refleja la pasión por el
+                  deporte y el deseo de superación.
                 </p>
               </div>
               <div className="mb-12 flex gap-8 px-4">
@@ -37,11 +42,9 @@ const AboutSectionTwo = () => {
                   </div>
                   <div className="HcOXKn SxM0TO QxJLC3 comp-kpql9p9a wixui-rich-text">
                     <p className="text-base font-medium leading-relaxed text-white">
-                      Fundador & Instructor
+                      Fundador e Instructor
                       <br className="wixui-rich-text__text" />
-                      Peru Skate del año 2017
-                      <br className="wixui-rich-text__text" />
-                      Entrenador Profesional
+                      Entrenador Profesional en Peru Skate desde 2012
                     </p>
                   </div>
                 </div>

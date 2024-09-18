@@ -17,6 +17,7 @@ import Carousel from "./Carousel";
 import Class from "./Class";
 import Header2 from "./Header2";
 import Us from "./Us";
+import SurfTrainingDashboard from "./Instructors";
 
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
       <Hero src="/video/home.mp4" />
       {/* <Us /> */}
       <Features />
+      <SurfTrainingDashboard />
       {/* <Brands /> */}
       {/* <AboutSectionOne /> */}
       <AboutSectionTwo />

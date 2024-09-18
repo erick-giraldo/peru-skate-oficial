@@ -11,16 +11,16 @@ const featuresData: Feature[] = [
   {
     id: 2,
     image: '/images/feature/feat_02.webp',
-    title: "High-quality Design",
+    title: "Competencias",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "Somos un equipo de profesionales altamente calificados, dedicados a formar nuevas generaciones de riders con un nivel de excelencia que nos posiciona año tras año entre los mejores en competencias a nivel nacional. Preparamos a nuestros deportistas para que se desarrollen como profesionales, brindándoles la confianza y el apoyo necesarios para participar en competiciones desde los 5 años de edad.",
   },
   {
     id: 3,
     image: '/images/feature/feat_03.webp',
-    title: "Next.js 13 (Latest)",
+    title: "Instrucción Grupal y Personalizada",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "Enseñamos a niños, jóvenes y adultos desde los 5 años de edad, consolidando su seguridad, confianza y coordinación. Nuestro proceso de aprendizaje es 100% divertido y se adapta a tu propio ritmo. Te proporcionamos todos los implementos necesarios para que disfrutes al máximo de tus primeras clases. ¡Ven y comienza tu aventura en el skate con nosotros!",
   },
   // {
   //   id: 1,

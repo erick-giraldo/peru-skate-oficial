@@ -10,9 +10,9 @@ export default function Features (){
         <div className="container">
           <SectionTitle
             width="fit-content"
-            mb="20px"
+            mb="50px"
             title="Skateboarding a Tu Medida"
-            paragraph="El proceso del aprendizaje es 100% divertido, vamos a tu ritmo, te brindamos todos los implementos para tus primeras clases. Las clases son dictadas principalmente en los skateparks de San Borja, Miraflores y la Molina. Tambien brindamos clases personalizadas en parques o/a domicilio previa reservación (BOTON DE INSCRIBIRSE), pueden ser en grupo o personalizado."
+            paragraph="Nuestro proceso de enseñanza es 100% divertido y se adapta completamente a tu ritmo. Te proporcionamos todos los implementos necesarios para que comiences tus primeras clases sin preocupaciones. Las sesiones se llevan a cabo principalmente en los skateparks de San Borja, Miraflores y La Molina. También ofrecemos clases personalizadas en parques o a domicilio, previa reserva, con opciones tanto grupales como individuales, según tus necesidades."
             center
             fontTitle='font-dreadful'
           />
