@@ -1,8 +1,8 @@
-export type IInstagram ={
+export type IInstagram = {
     "id": string,
     "caption": string,
     "media_url": string,
     "permalink": string,
-    "media_type": string,
+    "media_type": "IMAGE" | "VIDEO" | "CAROUSEL_ALBUM",
     "timestamp": string,
 }
