@@ -1,69 +1,77 @@
-  import React, { useEffect, useState } from "react";
-  import Image from "next/image";
-  import { fetchInstagramPosts } from "../../lib/instagram";
-  import { IInstagram } from "@/components/types";
-  import { FaPlay, FaPlayCircle } from "react-icons/fa";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import { fetchInstagramPosts } from "../../lib/instagram";
+import { IInstagram } from "@/components/types";
+import { FaPlay, FaPlayCircle } from "react-icons/fa";
+import { Button } from "@/components/ui/button";
 
-  const InstagramAlbum: React.FC = () => {
-    const [posts, setPosts] = useState<IInstagram[]>([]);
-    const [loading, setLoading] = useState(true);
+const InstagramAlbum: React.FC = () => {
+  const [posts, setPosts] = useState<IInstagram[]>([]);
+  const [visiblePosts, setVisiblePosts] = useState<IInstagram[]>([]);
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-      const getPosts = async () => {
-        try {
-          const postsData = await fetchInstagramPosts();
-          console.log("🚀 ~ getPosts ~ postsData:", postsData);
-          setPosts(postsData.slice(0, 9));
-        } catch (error) {
-          console.error("Error fetching Instagram posts:", error);
-        } finally {
-          setLoading(false);
-        }
-      };
-
-      getPosts();
-    }, []);
-
-    if (loading) {
-      return <p className="text-center text-xl">Cargando publicaciones...</p>;
-    }
-
-    if (posts.length === 0) {
-      return (
-        <p className="text-center text-xl">No se encontraron publicaciones.</p>
-      );
-    }
-
-    const renderMedia = (post: IInstagram) => {
-      if (post.media_type === "VIDEO") {
-        return (
-          <div className="relative w-full h-full">
-            <video
-              src={post.media_url}
-              className="transition-transform duration-300 hover:scale-110"
-            />
-            <FaPlayCircle className="absolute inset-0 m-auto text-white text-5xl opacity-90" />
-          </div>
-        );
-      } else {
-        return (
-          <Image
-            src={post.media_url}
-            alt={post.caption || "Instagram post"}
-            layout="fill"
-            objectFit="cover"
-            className="transition-transform duration-300 hover:scale-110 w-52"
-          />
-        );
+  useEffect(() => {
+    const getPosts = async () => {
+      try {
+        const postsData = await fetchInstagramPosts();
+        setPosts(postsData.slice(0, 15));
+        setVisiblePosts(postsData.slice(0, 6));
+      } catch (error) {
+        console.error("Error fetching Instagram posts:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
+    getPosts();
+  }, []);
+
+  const loadMore = () => {
+    const currentLength = visiblePosts.length;
+    const more = posts.slice(currentLength, currentLength + 6);
+    setVisiblePosts([...visiblePosts, ...more]);
+  };
+
+  if (loading) {
+    return <p className="text-center text-xl">Cargando publicaciones...</p>;
+  }
+
+  if (posts.length === 0) {
     return (
-      <section id="features" className="py-16 md:py-20 lg:py-28">
-        <div className="container">
-          <div className="">
-            <div className="flex justify-center">
-              <svg
+      <p className="text-center text-xl">No se encontraron publicaciones.</p>
+    );
+  }
+
+  const renderMedia = (post: IInstagram) => {
+    if (post.media_type === "VIDEO") {
+      return (
+        <div className="relative w-full h-full">
+          <video
+            src={post.media_url}
+            className="transition-transform duration-300 hover:scale-110"
+          />
+          <FaPlayCircle className="absolute inset-0 m-auto text-white text-5xl opacity-90" />
+        </div>
+      );
+    } else {
+      return (
+        <Image
+          src={post.media_url}
+          alt={post.caption || "Instagram post"}
+          layout="fill"
+          objectFit="cover"
+          className="transition-transform duration-300 hover:scale-110 w-52"
+        />
+      );
+    }
+  };
+
+  return (
+    <section id="features" className="py-16 md:py-20 lg:py-28">
+      <div className="container">
+        <div className="">
+          <div className="flex justify-center mb-10">
+          <svg
                 width="250"
                 height="150"
                 viewBox="0 0 840 300"
@@ -75,27 +83,37 @@
                   fill="#262626"
                 />
               </svg>
-            </div>
-            <div className="grid grid-cols-1 gap-1 md:grid-cols-2 lg:grid-cols-3">
-              {posts.map((post) => (
-                <div
-                  key={post.id}
-                  className="relative aspect-square overflow-hidden"
-                >
-                  <a
-                    href={post.permalink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {renderMedia(post)}
-                  </a>
-                </div>
-              ))}
-            </div>
           </div>
+          <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
+            {visiblePosts.map((post) => (
+              <div
+                key={post.id}
+                className="relative aspect-square overflow-hidden"
+              >
+                <a
+                  href={post.permalink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {renderMedia(post)}
+                </a>
+              </div>
+            ))}
+          </div>
+          {visiblePosts.length < posts.length && (
+            <div className="flex justify-center mt-8">
+              <Button
+                onClick={loadMore}
+                className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105"
+              >
+                Cargar más fotos
+              </Button>
+            </div>
+          )}
         </div>
-      </section>
-    );
-  };
+      </div>
+    </section>
+  );
+};
 
-  export default InstagramAlbum;
+export default InstagramAlbum;
