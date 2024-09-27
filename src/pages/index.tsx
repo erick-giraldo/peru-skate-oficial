@@ -18,6 +18,7 @@ import Class from "./Class";
 import Header2 from "./Header2";
 import Us from "./Us";
 import SurfTrainingDashboard from "./Instructors";
+import InstagramAlbum from "./Instagram";
 
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
       {/* <Testimonials /> */}
       <Pricing />
       {/* <Blog /> */}
+      <InstagramAlbum />
       <Class />
       <Contact />
       <Footer />
