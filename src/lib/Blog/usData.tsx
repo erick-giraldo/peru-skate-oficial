@@ -22,7 +22,7 @@ const usData: Blog[] = [
       "Franco es un experto en skateboarding con una profunda comprensión de las técnicas técnicas avanzadas. Su habilidad para desglosar y enseñar habilidades complejas hace que cada sesión sea efectiva y valiosa, permitiendo a los estudiantes perfeccionar sus técnicas y desarrollar su estilo personal.",
     image: "/images/blog/franco_ruiz_diaz_2.png",
     author: {
-      name: "ranco Ruiz Diaz",
+      name: "Franco Ruiz Diaz",
       image: "/images/blog/franco_ruiz_diaz.jpg",
       designation: "Instructor",
     },

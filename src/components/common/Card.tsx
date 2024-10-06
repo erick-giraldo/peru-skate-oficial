@@ -9,9 +9,9 @@ interface CardProps {
   description: string;
 }
 
-const Card: React.FC<CardProps> = ({ image, title, sub, description }) => {
+const Card: React.FC<CardProps> = ({ image, title, sub }) => {
   return (
-    <div className="relative max-w-[373px] max-h-[503px] shadow-md overflow-hidden group">
+    <div className="relative max-w-xs sm:max-w-sm lg:max-w-md xl:max-w-lg shadow-md overflow-hidden group">
       <div className="overflow-hidden">
         <Image
           width={373}
@@ -21,31 +21,25 @@ const Card: React.FC<CardProps> = ({ image, title, sub, description }) => {
           className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
         />
       </div>
-      <div className="absolute inset-0 bg-[#f56256] p-3 text-white text-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col justify-center opacity-0 group-hover:opacity-90 z-10">
+      <div className="absolute inset-0 bg-[#f56256] p-4 sm:p-5 text-white text-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex flex-col justify-center opacity-0 group-hover:opacity-90 z-10">
         <div className="flex flex-col gap-3">
-          <h4 className="text-lg text-center font-bold">{title}</h4>
-          <h5 className="text-sm text-center font-bold">{sub}</h5>
-          <p>
-            <i className="fa fa-home" aria-hidden="true"></i> 86 West Street, IL
-            60172
+          <h4 className="text-lg sm:text-xl font-bold">{title}</h4>
+          <h5 className="text-sm sm:text-md font-semibold">{sub}</h5>
+          <p className="text-xs sm:text-sm">
+            <i className="fa fa-home" aria-hidden="true"></i> 86 West Street, IL 60172
           </p>
-          <p>
-            <i className="fa fa-clock-o" aria-hidden="true"></i> 09:00 AM -
-            06:30 PM
+          <p className="text-xs sm:text-sm">
+            <i className="fa fa-clock-o" aria-hidden="true"></i> 09:00 AM - 06:30 PM
           </p>
-          <Button
-            variant="skt"
-            size="default"
-            className="rounded-full border-none"
-          >
-            know more
+          <Button variant="skt" size="default" className="rounded-full border-none">
+            Know more
           </Button>
         </div>
       </div>
       <div className="absolute bottom-0 left-0 right-0 bg-[#f56256] h-10 p-8 text-white flex items-center justify-center z-20 group-hover:hidden">
         <div className="flex flex-col">
-          <h4 className="text-lg text-center font-bold">{title}</h4>
-          <h5 className="text-sm text-center font-bold">{sub}</h5>
+          <h4 className=" lg:text-sm  text-xs font-bold">{title}</h4>
+          <h5 className="text-sm sm:text-md font-semibold">{sub}</h5>
         </div>
       </div>
     </div>

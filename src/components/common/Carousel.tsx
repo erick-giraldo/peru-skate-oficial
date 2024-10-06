@@ -13,8 +13,8 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
     autoplay: true,
     speed: 500,
     dots: false,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     arrows: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
@@ -49,7 +49,7 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
     <div className="relative w-full  mx-auto">
       <Slider {...settings}>
         {items.map((item, index) => (
-          <div key={index} className="p-2 gap-4">
+          <div key={index} className="p-8 gap-4">
             <Card
               image={item.image}
               title={item.title}

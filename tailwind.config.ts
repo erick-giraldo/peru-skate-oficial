@@ -31,8 +31,11 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        'pl1': 'url(/images/skateboard-art-1.jpg)',
+        'pl1': 'url(/images/pl2.jpg)',
         'pl2': 'url(/images/tablas-varios.jpeg)'
+      },
+      height: {
+        '70vh': '70vh'
       },
       rotate: {
         '20': '20deg',

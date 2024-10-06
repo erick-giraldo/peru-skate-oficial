@@ -43,7 +43,7 @@ const InstagramAlbum: React.FC = () => {
   }
 
   return (
-    <section id="features" className="py-16 md:py-20 lg:py-28">
+    <section id="instagram" className="mb-16 md:mb-20 lg:mb-28">
       <div className="container">
         <div className="">
         <div className="flex justify-center mb-2">

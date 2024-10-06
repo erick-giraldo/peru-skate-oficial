@@ -12,17 +12,10 @@ export default function Footer(){
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block">
                   <Image
-                    src="/images/logo/logo-2.svg"
+                    src="/images/logo/logo-black.png"
                     alt="logo"
-                    className="w-full dark:hidden"
-                    width={140}
-                    height={30}
-                  />
-                  <Image
-                    src="/images/logo/logo.svg"
-                    alt="logo"
-                    className="hidden w-full dark:block"
-                    width={140}
+                    className="w-full"
+                    width={130}
                     height={30}
                   />
                 </Link>
@@ -222,17 +215,8 @@ export default function Footer(){
                 rel="noopener noreferrer"
                 className="hover:text-primary"
               >
-                UIdeck
+                t-soluciono.com
               </a>{" "}
-              and{" "}
-              <a
-                href="https://nextjstemplates.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary"
-              >
-                Next.js Templates
-              </a>
             </p>
           </div>
         </div>

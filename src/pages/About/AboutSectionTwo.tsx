@@ -32,7 +32,7 @@ const AboutSectionTwo = () => {
               </div>
               <div className="mb-12 flex gap-8 px-4">
                 <Avatar className="w-20 h-20">
-                  <AvatarImage src="https://github.com/shadcn.png" />
+                  <AvatarImage src="/images/franco.png" />
                 </Avatar>
                 <div>
                   <div className="HcOXKn SxM0TO QxJLC3 comp-kpql7zd5 wixui-rich-text">

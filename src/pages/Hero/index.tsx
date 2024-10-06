@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 interface HeroProps {
@@ -5,11 +6,15 @@ interface HeroProps {
 }
 
 export default function Hero({ src }: HeroProps) {
+  const handleClick = () => {
+    window.open("https://api.whatsapp.com/send/?phone=51945970045&text=🔥Deseo%20reservar%20una%20clase%20de%20prueba", "_blank"); // Cambia la ruta a la que deseas redirigir
+  };
+
   return (
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white "
+        className="relative z-10 overflow-hidden bg-white h-70vh flex items-center"
       >
         <div className="absolute inset-0 z-0">
           <video
@@ -38,12 +43,15 @@ export default function Hero({ src }: HeroProps) {
             <p className="mb-12 text-white  text-body-color sm:text-xs md:text-base">
               Disponibles para niños a partir de los 3 años y adultos.
             </p>
-              <Link
-                href="https://nextjstemplates.com/templates/saas-starter-startup"
-                className="rounded-xl bg-[#2f76b4] px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-[#2f76b4]/80"
+            <div className="self-center md:self-auto">
+              <Button
+                onClick={handleClick}
+                variant="default"
+                className="md:h-14 lg:px-8 h-12 md:px-4  w-60  md:w-80 rounded-xl bg-[#2f76b4] text-xs lg:text-base font-semibold text-white duration-300 ease-in-out hover:bg-[#2f76b4]/80" 
               >
                 🔥 Reserva tu clase de prueba gratis
-              </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>

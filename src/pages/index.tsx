@@ -13,12 +13,12 @@ import ScrollUp from "@/components/common/ScrollUp";
 import ScrollToTop from "@/components/scrollToTop";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Testimonials from "./Testimonials";
-import Carousel from "./Carousel";
-import Class from "./Class";
 import Header2 from "./Header2";
 import Us from "./Us";
-import SurfTrainingDashboard from "./Instructors";
 import InstagramAlbum from "./Instagram";
+import Events from "./Events";
+import Team from "./Team";
+import Parallax from "./Parallax";
 
 
 export default function Home() {
@@ -27,19 +27,19 @@ export default function Home() {
       <ScrollUp />
       <Header2 />
       <Hero src="/video/home.mp4" />
-      {/* <Us /> */}
       <Features />
-      <SurfTrainingDashboard />
-      {/* <Brands /> */}
+      {/* <Us /> */}
       {/* <AboutSectionOne /> */}
       <AboutSectionTwo />
-      <Carousel />
+      <Events />
+      <Parallax />
+      <Team />
       {/* <Testimonials /> */}
-      <Pricing />
       {/* <Blog /> */}
       <InstagramAlbum />
-      <Class />
-      <Contact />
+      <Pricing />
+      {/* <Contact /> */}
+      <Brands />
       <Footer />
       <ScrollToTop />
       <WhatsAppButton />
