@@ -19,11 +19,27 @@ import InstagramAlbum from "./Instagram";
 import Events from "./Events";
 import Team from "./Team";
 import Parallax from "./Parallax";
+import Loading from "@/components/loading";
+import { useEffect, useState } from "react";
 
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
+    {loading ? (
+        <Loading />
+      ) : (
+     <>
       <ScrollUp />
       <Header2 />
       <Hero src="/video/home.mp4" />
@@ -43,6 +59,8 @@ export default function Home() {
       <Footer />
       <ScrollToTop />
       <WhatsAppButton />
+     </>
+    )}
     </>
   );
 }

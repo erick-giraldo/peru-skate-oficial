@@ -76,3 +76,16 @@
       transform: rotate(20deg);
     }
   }
+
+  @keyframes spin-side {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  .animate-spin-side {
+    animation: spin-side 5s forwards;
+  }
