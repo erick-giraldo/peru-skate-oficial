@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { fetchInstagramPosts } from "../../lib/instagram";
-import { FaPlay, FaPlayCircle } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { IInstagram } from "@/components/types/instagram";
 
@@ -14,8 +13,9 @@ const InstagramAlbum: React.FC = () => {
     const getPosts = async () => {
       try {
         const postsData = await fetchInstagramPosts();
-        setPosts(postsData.slice(0, 15));
-        setVisiblePosts(postsData.slice(0, 6));
+        const imagePosts = postsData.filter(post => post.media_type === "IMAGE");
+        setPosts(imagePosts.slice(0, 15));
+        setVisiblePosts(imagePosts.slice(0, 6));
       } catch (error) {
         console.error("Error fetching Instagram posts:", error);
       } finally {
@@ -38,39 +38,15 @@ const InstagramAlbum: React.FC = () => {
 
   if (posts.length === 0) {
     return (
-      <p className="text-center text-xl">No se encontraron publicaciones.</p>
+      <p className="text-center text-xl">No se encontraron publicaciones de imágenes.</p>
     );
   }
-
-  const renderMedia = (post: IInstagram) => {
-    if (post.media_type === "VIDEO") {
-      return (
-        <div className="relative w-full h-full">
-          <video
-            src={post.media_url}
-            className="transition-transform duration-300 hover:scale-110"
-          />
-          <FaPlayCircle className="absolute inset-0 m-auto text-white text-5xl opacity-90" />
-        </div>
-      );
-    } else {
-      return (
-        <Image
-          src={post.media_url}
-          alt={post.caption || "Instagram post"}
-          layout="fill"
-          objectFit="cover"
-          className="transition-transform duration-300 hover:scale-110 w-52"
-        />
-      );
-    }
-  };
 
   return (
     <section id="features" className="py-16 md:py-20 lg:py-28">
       <div className="container">
         <div className="">
-          <div className="flex justify-center mb-2">
+        <div className="flex justify-center mb-2">
           <svg
                 width="200"
                 height="140"
@@ -101,7 +77,13 @@ const InstagramAlbum: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {renderMedia(post)}
+                  <Image
+                    src={post.media_url}
+                    alt={post.caption || "Instagram post"}
+                    layout="fill"
+                    objectFit="cover"
+                    className="transition-transform duration-300 hover:scale-110 w-52"
+                  />
                 </a>
               </div>
             ))}
