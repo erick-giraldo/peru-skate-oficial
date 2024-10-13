@@ -8,7 +8,7 @@ const testimonialData: Testimonial[] = [
     name: "Musharof Chy",
     designation: "Founder @TailGrids",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "Entrenar en CARPS ha sido una experiencia increíble. Mis habilidades en el skate mejoraron rápidamente gracias al ambiente seguro y profesional. ¡Recomiendo 100%!",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
@@ -17,7 +17,7 @@ const testimonialData: Testimonial[] = [
     name: "Devid Weilium",
     designation: "Founder @UIdeck",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "Mis hijos han encontrado en el skateboarding una forma divertida de desarrollar confianza y coordinación. CARPS ha sido el lugar perfecto para ellos.",
     image: "/images/testimonials/auth-02.png",
     star: 5,
   },
@@ -26,7 +26,7 @@ const testimonialData: Testimonial[] = [
     name: "Lethium Frenci",
     designation: "Founder @Lineicons",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "Mi experiencia en CARPS ha sido transformadora. No solo he mejorado mi técnica, sino que he desarrollado confianza y disciplina.",
     image: "/images/testimonials/auth-03.png",
     star: 5,
   },
@@ -37,9 +37,10 @@ const Testimonials = () => {
     <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Experiencias de nuestros riders"
+          paragraph="Cada reseña cuenta una historia de crecimiento y mejora, y estamos orgullosos de compartirlas contigo."
           center
+          fontTitle="font-dreadful"
         />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
@@ -48,7 +49,7 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
-      <div className="absolute right-0 top-5 z-[-1]">
+      {/* <div className="absolute right-0 top-5 z-[-1]">
         <svg
           width="238"
           height="531"
@@ -175,7 +176,7 @@ const Testimonials = () => {
             </linearGradient>
           </defs>
         </svg>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -7,9 +7,10 @@ interface CardProps {
   title: string;
   sub: string;
   description: string;
+  address: string
 }
 
-const Card: React.FC<CardProps> = ({ image, title, sub }) => {
+const Card: React.FC<CardProps> = ({ image, title, sub, address }) => {
   return (
     <div className="relative max-w-xs sm:max-w-sm lg:max-w-md xl:max-w-lg shadow-md overflow-hidden group">
       <div className="overflow-hidden">
@@ -26,12 +27,16 @@ const Card: React.FC<CardProps> = ({ image, title, sub }) => {
           <h4 className="text-lg sm:text-xl font-bold">{title}</h4>
           <h5 className="text-sm sm:text-md font-semibold">{sub}</h5>
           <p className="text-xs sm:text-sm">
-            <i className="fa fa-home" aria-hidden="true"></i> 86 West Street, IL 60172
-          </p>
-          <p className="text-xs sm:text-sm">
-            <i className="fa fa-clock-o" aria-hidden="true"></i> 09:00 AM - 06:30 PM
-          </p>
-          <Button variant="skt" size="default" className="rounded-full border-none">
+            <i className="fa fa-home" aria-hidden="true"></i>{address}</p>
+          {/* <p className="text-xs sm:text-sm">
+            <i className="fa fa-clock-o" aria-hidden="true"></i> 09:00 AM -
+            06:30 PM
+          </p> */}
+          <Button
+            variant="skt"
+            size="default"
+            className="rounded-full border-none"
+          >
             Know more
           </Button>
         </div>

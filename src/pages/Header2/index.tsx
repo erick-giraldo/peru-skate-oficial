@@ -19,13 +19,15 @@ const inter = Inter({ subsets: ["latin"] });
 
 const NAV_ITEMS: NavItem[] = [
   { href: "#", label: "Inicio" },
+  { href: "#us", label: "Nosotros" },
+
   {
     href: "#",
     label: "Clases",
     sub_label: ["Classes", "Programas", "Servicios"],
   },
+  { href: "#events", label: "Eventos" },
   { href: "#", label: "Productos" },
-  { href: "#instructors", label: "Profesores" },
   { href: "#", label: "Activaciones" },
 ];
 

@@ -6,7 +6,7 @@ import usData from "@/lib/Blog/usData";
 
 export default function Team() {
   return (
-    <section  id="instructors" className="py-12 md:py-20 lg:py-28 bg-gray-100">
+    <section  id="us" className="py-12 md:py-20 lg:py-28 bg-gray-100">
       <div className="container mx-auto px-4">
         <SectionTitle
           width="fit-content"

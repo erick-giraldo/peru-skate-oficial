@@ -4,7 +4,7 @@ import Card from "./Card";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
 interface CarouselProps {
-  items: { image: string; title: string; sub: string; description: string }[];
+  items: { image: string; title: string; sub: string; description: string, address: string }[];
 }
 
 const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
@@ -13,8 +13,8 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
     autoplay: true,
     speed: 500,
     dots: false,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     arrows: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
@@ -55,6 +55,7 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
               title={item.title}
               sub={item.sub}
               description={item.description}
+              address={item.address}
             />
           </div>
         ))}

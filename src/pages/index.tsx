@@ -21,6 +21,7 @@ import Team from "./Team";
 import Parallax from "./Parallax";
 import Loading from "@/components/loading";
 import { useEffect, useState } from "react";
+import PromoPrice from "./Promo/indes";
 
 
 export default function Home() {
@@ -43,19 +44,20 @@ export default function Home() {
       <ScrollUp />
       <Header2 />
       <Hero src="/video/home.mp4" />
+      <Team />
+      <Events />
+      <AboutSectionTwo />
       <Features />
       {/* <Us /> */}
       {/* <AboutSectionOne /> */}
-      <AboutSectionTwo />
-      <Events />
-      <Parallax />
-      <Team />
-      {/* <Testimonials /> */}
+      {/* <Parallax /> */}
       {/* <Blog /> */}
+      <Testimonials />
+      {/* <Pricing /> */}
+      <PromoPrice />
       <InstagramAlbum />
-      <Pricing />
       {/* <Contact /> */}
-      <Brands />
+      {/* <Brands /> */}
       <Footer />
       <ScrollToTop />
       <WhatsAppButton />
