@@ -52,9 +52,9 @@ export default function Home() {
       {/* <AboutSectionOne /> */}
       {/* <Parallax /> */}
       {/* <Blog /> */}
+      <PromoPrice />
       <Testimonials />
       {/* <Pricing /> */}
-      <PromoPrice />
       <InstagramAlbum />
       {/* <Contact /> */}
       {/* <Brands /> */}
