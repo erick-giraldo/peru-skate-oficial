@@ -30,6 +30,9 @@ const config = {
       },
     },
     extend: {
+      maxWidth: {
+        'max-content': 'max-content',
+      },
       backgroundImage: {
         'pl1': 'url(/images/pl2.jpg)',
         'pl2': 'url(/images/tablas-varios.jpeg)'

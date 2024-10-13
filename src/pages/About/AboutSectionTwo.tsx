@@ -58,17 +58,15 @@ const AboutSectionTwo = () => {
                   <Image
                     src="/images/about/about-board.png"
                     alt="about image"
-                    layout="responsive"
                     width={500}
                     height={500}
-                    className="drop-shadow-three sm:block hidden md:mr-0"
+                    className="drop-shadow-three md:block hidden md:mr-0"
                   />
                 </div>
                 <div className="w-5/12 mx-auto md:hidden -mb-8">
                   <Image
                     src="/images/about/about-board-small.png"
                     alt="about image"
-                    layout="responsive"
                     width={500}
                     height={500}
                     className="drop-shadow-three mx-auto  max-w-full md:mr-0"
