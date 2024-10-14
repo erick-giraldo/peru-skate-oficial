@@ -27,11 +27,8 @@ const Card: React.FC<CardProps> = ({ image, title, sub, address }) => {
           <h4 className="text-lg sm:text-xl font-bold">{title}</h4>
           <h5 className="text-sm sm:text-md font-semibold">{sub}</h5>
           <p className="text-xs sm:text-sm">
-            <i className="fa fa-home" aria-hidden="true"></i>{address}</p>
-          {/* <p className="text-xs sm:text-sm">
-            <i className="fa fa-clock-o" aria-hidden="true"></i> 09:00 AM -
-            06:30 PM
-          </p> */}
+            <i className="fa fa-home" aria-hidden="true"></i> {address}
+          </p>
           <Button
             variant="skt"
             size="default"
@@ -41,10 +38,10 @@ const Card: React.FC<CardProps> = ({ image, title, sub, address }) => {
           </Button>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 bg-[#f56256] h-10 p-8 text-white flex items-center justify-center z-20 group-hover:hidden">
+      <div className="absolute bottom-0 left-0 right-0 bg-[#f56256] p-2 sm:p-3 text-white flex items-center justify-center z-20 group-hover:hidden">
         <div className="flex flex-col">
-          <h4 className=" lg:text-sm  text-xs font-bold">{title}</h4>
-          <h5 className="text-sm sm:text-md font-semibold">{sub}</h5>
+          <h4 className="text-xs sm:text-sm lg:text-base font-bold">{title}</h4>
+          <h5 className="text-xs sm:text-sm font-semibold">{sub}</h5>
         </div>
       </div>
     </div>

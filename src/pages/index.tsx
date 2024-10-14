@@ -53,8 +53,8 @@ export default function Home() {
       {/* <Parallax /> */}
       {/* <Blog /> */}
       <PromoPrice />
+      <Pricing />
       <Testimonials />
-      {/* <Pricing /> */}
       <InstagramAlbum />
       {/* <Contact /> */}
       {/* <Brands /> */}

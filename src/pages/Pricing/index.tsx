@@ -10,9 +10,9 @@ const Pricing = () => {
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
-        <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+      <SectionTitle
+          title="Planes flexibles para tu desarrollo"
+          paragraph="En PerúSkate, creemos que el skateboarding es más que un deporte; es una herramienta poderosa para el crecimiento personal y social. Nuestro Centro de Alto Rendimiento (CARPS) es el único espacio abierto al público donde podrás desarrollar tu máximo potencial en el skateboarding de manera segura y efectiva. Elige el plan que mejor se adapte a tus objetivos y comienza tu viaje hacia la excelencia en el skate."
           center
           width="665px"
         />
@@ -27,7 +27,7 @@ const Pricing = () => {
                   : "text-dark dark:text-white"
               } mr-4 cursor-pointer text-base font-semibold`}
             >
-              Monthly
+              Mensual
             </span>
             <div
               onClick={() => setIsMonthly(!isMonthly)}
@@ -52,55 +52,59 @@ const Pricing = () => {
                   : "pointer-events-none text-primary"
               } ml-4 cursor-pointer text-base font-semibold`}
             >
-              Yearly
+              Paquete
             </span>
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            packageName="Principiante"
+            price={isMonthly ? "60" : "240"}
+            duration={isMonthly ? "mes" : ""}
+            subtitle={isMonthly ? "Inicia tu aventura en el mundo del skate." : "Paquete de 4 meses: Ideal para empezar."}
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="1 sesión semanal" status="active" />
+            <OfferList text="Clases básicas" status="active" />
+            <OfferList text="Equipo estándar" status="active" />
+            <OfferList text="Equilibrio y coordinación" status="active" />
+            <OfferList text="Cultura skate" status="active" />
+            <OfferList text="Evaluación mensual" status="active" />
+            <OfferList text="Comunidad de principiantes" status="active" />
           </PricingBox>
           <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "399" : "789"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            packageName="Intermedio"
+            price={isMonthly ? "120" : "480"}
+            duration={isMonthly ? "mes" : ""}
+            subtitle={isMonthly ? "Perfecciona tus habilidades y desafía tus límites." : "Paquete de 8 meses: Desarrolla tu técnica."}
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="2 sesiones semanales" status="active" />
+            <OfferList text="Técnicas avanzadas" status="active" />
+            <OfferList text="Equipo profesional" status="active" />
+            <OfferList text="Entrenamiento físico" status="active" />
+            <OfferList text="Workshops creativos" status="active" />
+            <OfferList text="Eventos locales" status="active" />
+            <OfferList text="Asesoría personalizada" status="active" />
           </PricingBox>
           <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            packageName="Pro"
+            price={isMonthly ? "180" : "720"}
+            duration={isMonthly ? "mes" : ""}
+            subtitle={isMonthly ? "Alcanza tu máximo potencial y destaca en la escena." : "Paquete de 12 meses: Entrenamiento pro."}
+
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+             <OfferList text="Sesiones ilimitadas" status="active" />
+            <OfferList text="Plan personalizado" status="active" />
+            <OfferList text="Acceso 24/7" status="active" />
+            <OfferList text="Prep. física y mental" status="active" />
+            <OfferList text="Mentorías pro" status="active" />
+            <OfferList text="Competiciones nacionales" status="active" />
+            <OfferList text="Patrocinio potencial" status="active" />
           </PricingBox>
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 z-[-1]">
+      {/* <div className="absolute bottom-0 left-0 z-[-1]">
         <svg
           width="239"
           height="601"
@@ -153,7 +157,7 @@ const Pricing = () => {
             </linearGradient>
           </defs>
         </svg>
-      </div>
+      </div> */}
     </section>
   );
 };
