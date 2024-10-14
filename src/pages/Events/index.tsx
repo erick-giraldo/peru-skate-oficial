@@ -4,21 +4,21 @@ export default function Events() {
   const items = [
     {
       image: "/images/events/eve1.jpg",
-      title: "Skaters Competiton",
+      title: "Circuito Nacional de VansBowl",
       sub: "23 April 2017",
       description: "Descripción de la imagen 1",
       address: 'San Borja'
     },
     {
       image: "/images/events/eve2.jpg",
-      title: "Imagen 2",
+      title: "Circuito Selectivo FDNP",
       sub: "23 April 2017",
       description: "Descripción de la imagen 1",
        address: 'San Borja'
     },
     {
       image: "/images/events/eve3.jpg",
-      title: "Imagen 3",
+      title: "Circuito FDNP ('Lucha Girl')",
       sub: "23 April 2017",
       description: "Descripción de la imagen 1",
        address: 'San Borja'
