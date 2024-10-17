@@ -1,7 +1,6 @@
 import React from "react";
 import { ChevronRight, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 interface CarpsSkateProps {
   title: string;
@@ -56,14 +55,14 @@ const CarpsSkate: React.FC<CarpsSkateProps> = ({
           </div>
           <div className="flex flex-col md:w-1/2 mt-8">
             <div className="w-full mt-8 md:mt-0">
-                <Image
+                <img
                 src={rightImage}
                 alt="Skateboarder 2"
                 className="w-full h-80 object-cover transform rotate-3 shadow-lg border-8  border-white"
               />
             </div>
             <div className="w-full mb-8 md:mb-0">
-              <Image
+              <img
                 src={leftImage}
                 alt="Skateboarder 1"
                 className="w-full h-80 object-cover transform -rotate-3 shadow-lg border-8 border-white"
