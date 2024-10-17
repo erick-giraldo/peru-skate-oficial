@@ -1,4 +1,3 @@
-
 import Header from "./Header";
 import Hero from "./Hero";
 import Footer from "./Footer";
@@ -21,8 +20,7 @@ import Team from "./Team";
 import Parallax from "./Parallax";
 import Loading from "@/components/loading";
 import { useEffect, useState } from "react";
-import PromoPrice from "./Promo/indes";
-
+import Carps from "./Promo/indes";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -37,32 +35,32 @@ export default function Home() {
 
   return (
     <>
-    {loading ? (
+      {loading ? (
         <Loading />
       ) : (
-     <>
-      <ScrollUp />
-      <Header2 />
-      <Hero src="/video/home.mp4" />
-      <Team />
-      <Events />
-      <AboutSectionTwo />
-      <Features />
-      {/* <Us /> */}
-      {/* <AboutSectionOne /> */}
-      {/* <Parallax /> */}
-      {/* <Blog /> */}
-      <PromoPrice />
-      <Pricing />
-      <Testimonials />
-      <InstagramAlbum />
-      {/* <Contact /> */}
-      {/* <Brands /> */}
-      <Footer />
-      <ScrollToTop />
-      <WhatsAppButton />
-     </>
-    )}
+        <>
+          <ScrollUp />
+          <Header2 />
+          <Hero src="/video/home.mp4" />
+          <Team />
+          <Events />
+          <AboutSectionTwo />
+          <Features />
+          {/* <Us /> */}
+          {/* <AboutSectionOne /> */}
+          {/* <Parallax /> */}
+          {/* <Blog /> */}
+          <Carps />
+          <Pricing />
+          <Testimonials />
+          <InstagramAlbum />
+          {/* <Contact /> */}
+          {/* <Brands /> */}
+          <Footer />
+          <ScrollToTop />
+          <WhatsAppButton />
+        </>
+      )}
     </>
   );
 }

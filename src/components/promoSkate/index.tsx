@@ -2,20 +2,18 @@ import React from "react";
 import { ChevronRight, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-interface DynamicSkatePromoProps {
+interface CarpsSkateProps {
   title: string;
   description: string;
   benefits: string[];
-  location: string;
   leftImage: string;
   rightImage: string;
 }
 
-const DynamicSkatePromo: React.FC<DynamicSkatePromoProps> = ({
+const CarpsSkate: React.FC<CarpsSkateProps> = ({
   title,
   description,
   benefits,
-  location,
   leftImage,
   rightImage,
 }) => {
@@ -23,17 +21,17 @@ const DynamicSkatePromo: React.FC<DynamicSkatePromoProps> = ({
     window.open("https://api.whatsapp.com/send/?phone=51945970045&text=🔥Deseo%20reservar%20una%20clase%20de%20prueba", "_blank"); // Cambia la ruta a la que deseas redirigir
   };
   return (
-    <section className="bg-[#2f76b4] text-white overflow-hidden">
+    <section className="bg-[#E40032] text-white overflow-hidden">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 px-4 md:px-8">
-            <h2 className="mb-4 text-center text-3xl font-bold !leading-tight text-white sm:text-4xl md:text-[50px] font-dreadful ">
+            <h2 className="mb-4 text-center text-3xl font-bold !leading-tight text-white sm:text-4xl md:text-[50px] font-dreadful">
               {title}
             </h2>
             <p className="text-lg mb-8">{description}</p>
 
             <div className="">
-              <h3 className="text-2xl font-semibold mb-4 text-blue-400">
+              <h3 className="text-2xl font-semibold mb-4 font-dreadful">
                 Beneficios del Skateboarding:
               </h3>
               <ul className="space-y-2">
@@ -77,4 +75,4 @@ const DynamicSkatePromo: React.FC<DynamicSkatePromoProps> = ({
   );
 };
 
-export default DynamicSkatePromo;
+export default CarpsSkate;

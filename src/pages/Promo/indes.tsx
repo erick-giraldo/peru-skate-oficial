@@ -1,6 +1,6 @@
-import PromoSkate from "@/components/promoSkate";
+import CarpsSkate from "@/components/promoSkate";
 
-const PromoPrice = () => {
+const Carps = () => {
     const title = "Centro de Alto Rendimiento Perú Skate CARPS";
     const description = `
       Teniendo en cuenta los grandes beneficios del skateboarding para niños, jóvenes y adultos, como la mejora en la coordinación,
@@ -14,18 +14,15 @@ const PromoPrice = () => {
       "Espacio seguro para evitar lesiones, gracias a materiales livianos como la madera.",
       "Desarrolla velocidad de reacción y fluidez en el skateboarding."
     ];
-  
-    const location = "@peruskate";
-    const leftImage = "/images/carps.jpeg";  // Ruta de la imagen de fondo
-    const rightImage = "/images/carps2.jpeg";  // Ruta de la imagen de fondo
+    const leftImage = "/images/carps.jpeg";
+    const rightImage = "/images/carps2.jpeg";
   
     return (
       <div>
-        <PromoSkate 
+        <CarpsSkate 
           title={title} 
           description={description} 
           benefits={benefits} 
-          location={location}
           leftImage={leftImage}
           rightImage={rightImage}
         />
@@ -33,4 +30,4 @@ const PromoPrice = () => {
     );
   };
 
-export default PromoPrice;
+export default Carps;
