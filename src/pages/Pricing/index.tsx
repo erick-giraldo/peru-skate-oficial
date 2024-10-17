@@ -61,7 +61,7 @@ const Pricing = () => {
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             packageName="Principiante"
-            price={isMonthly ? "60" : "240"}
+            price={isMonthly ? "70" : "240"}
             duration={isMonthly ? "mes" : ""}
             subtitle={isMonthly ? "Inicia tu aventura en el mundo del skate." : "Paquete de 4 meses: Ideal para empezar."}
           >
@@ -75,7 +75,7 @@ const Pricing = () => {
           </PricingBox>
           <PricingBox
             packageName="Intermedio"
-            price={isMonthly ? "120" : "480"}
+            price={isMonthly ? "70" : "400"}
             duration={isMonthly ? "mes" : ""}
             subtitle={isMonthly ? "Perfecciona tus habilidades y desafía tus límites." : "Paquete de 8 meses: Desarrolla tu técnica."}
           >
@@ -89,7 +89,7 @@ const Pricing = () => {
           </PricingBox>
           <PricingBox
             packageName="Pro"
-            price={isMonthly ? "180" : "720"}
+            price={isMonthly ? "70" : "540"}
             duration={isMonthly ? "mes" : ""}
             subtitle={isMonthly ? "Alcanza tu máximo potencial y destaca en la escena." : "Paquete de 12 meses: Entrenamiento pro."}
 
