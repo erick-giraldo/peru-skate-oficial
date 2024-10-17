@@ -1,4 +1,4 @@
-import CarpsSkate from "@/components/promoSkate";
+import CarpsSkate from "@/components/carps";
 
 const Carps = () => {
     const title = "Centro de Alto Rendimiento Perú Skate CARPS";

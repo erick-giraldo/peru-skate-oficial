@@ -20,7 +20,8 @@ import Team from "./Team";
 import Parallax from "./Parallax";
 import Loading from "@/components/loading";
 import { useEffect, useState } from "react";
-import Carps from "./Promo/indes";
+import Carps from "./Carps";
+
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
