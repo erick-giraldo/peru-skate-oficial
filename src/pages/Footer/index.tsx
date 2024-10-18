@@ -215,7 +215,7 @@ export default function Footer(){
                 rel="noopener noreferrer"
                 className="hover:text-primary"
               >
-                t-soluciono.com
+                peru-skate.com
               </a>{" "}
             </p>
           </div>

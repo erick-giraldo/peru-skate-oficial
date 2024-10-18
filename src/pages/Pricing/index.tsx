@@ -111,7 +111,7 @@ const Pricing = () => {
             duration={isMonthly ? "clase" : ""}
             subtitle={
               isMonthly
-                ? "Alcanza tu máximo potencial y destaca en la escena."
+                ? "Alcanza tu máximo potencial."
                 : "Paquete por 12 clases: Entrenamiento pro."
             }
           >
