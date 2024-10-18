@@ -35,11 +35,11 @@ const Pricing = () => {
               className="flex cursor-pointer items-center"
             >
               <div className="relative">
-                <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
+                <div className="h-5 w-14 rounded-full bg-navBurger shadow-inner"></div>
                 <div
                   className={`${
                     isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
+                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-navBurger transition`}
                 >
                   <span className="active h-4 w-4 rounded-full bg-white"></span>
                 </div>
@@ -63,21 +63,22 @@ const Pricing = () => {
             packageName="Principiante"
             price={isMonthly ? "70" : "240"}
             duration={isMonthly ? "mes" : ""}
-            subtitle={isMonthly ? "Inicia tu aventura en el mundo del skate." : "Paquete de 4 meses: Ideal para empezar."}
+            subtitle={isMonthly ? "Inicia tu aventura en el mundo del skate." : "Paquete por 4 clases: Ideal para empezar."}
           >
-            <OfferList text="1 sesión semanal" status="active" />
+            <OfferList text="3 sesiones semanales " status="active" />
             <OfferList text="Clases básicas" status="active" />
             <OfferList text="Equipo estándar" status="active" />
             <OfferList text="Equilibrio y coordinación" status="active" />
             <OfferList text="Cultura skate" status="active" />
             <OfferList text="Evaluación mensual" status="active" />
             <OfferList text="Comunidad de principiantes" status="active" />
+            <OfferList text="Durante el  primer mes se le presta todos los implementos" status="active"  classText='text-navBurger'/>
           </PricingBox>
           <PricingBox
             packageName="Intermedio"
             price={isMonthly ? "70" : "400"}
             duration={isMonthly ? "mes" : ""}
-            subtitle={isMonthly ? "Perfecciona tus habilidades y desafía tus límites." : "Paquete de 8 meses: Desarrolla tu técnica."}
+            subtitle={isMonthly ? "Perfecciona tus habilidades y desafía tus límites." : "Paquete por 8 clases: Desarrolla tu técnica."}
           >
             <OfferList text="2 sesiones semanales" status="active" />
             <OfferList text="Técnicas avanzadas" status="active" />
@@ -86,21 +87,23 @@ const Pricing = () => {
             <OfferList text="Workshops creativos" status="active" />
             <OfferList text="Eventos locales" status="active" />
             <OfferList text="Asesoría personalizada" status="active" />
+            <OfferList text="Durante el  primer mes se le presta todos los implementos" status="active"  classText='text-navBurger'/>
           </PricingBox>
           <PricingBox
             packageName="Pro"
             price={isMonthly ? "70" : "540"}
             duration={isMonthly ? "mes" : ""}
-            subtitle={isMonthly ? "Alcanza tu máximo potencial y destaca en la escena." : "Paquete de 12 meses: Entrenamiento pro."}
+            subtitle={isMonthly ? "Alcanza tu máximo potencial y destaca en la escena." : "Paquete por 12 clases: Entrenamiento pro."}
 
           >
-             <OfferList text="Sesiones ilimitadas" status="active" />
+             <OfferList text="1 sesión semanal" status="active" />
             <OfferList text="Plan personalizado" status="active" />
             <OfferList text="Acceso 24/7" status="active" />
             <OfferList text="Prep. física y mental" status="active" />
             <OfferList text="Mentorías pro" status="active" />
             <OfferList text="Competiciones nacionales" status="active" />
             <OfferList text="Patrocinio potencial" status="active" />
+            <OfferList text="Durante el  primer mes se le presta todos los implementos" status="active"  classText='text-navBurger'/>
           </PricingBox>
         </div>
       </div>

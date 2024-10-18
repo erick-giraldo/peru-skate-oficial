@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutSectionTwo = () => {
   return (
-    <section className="pt-16 md:pt-20 lg:pt-28 bg-[#2f76b4]">
+    <section className="pt-16 md:pt-20 lg:pt-28 bg-navBurger">
       <div className="container">
         <div className="-mx-4 flex flex-wrap items-end">
           <div className="w-full px-4 md:w-2/3">

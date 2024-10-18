@@ -50,7 +50,7 @@ export default function Hero({ src }: HeroProps) {
               <Button
                 onClick={handleClick}
                 variant="default"
-                className="md:h-14 lg:px-8 h-12 md:px-4  w-60  md:w-80 rounded-xl bg-[#2f76b4] text-xs lg:text-base font-semibold text-white duration-300 ease-in-out hover:bg-[#2f76b4]/80"
+                className="md:h-14 lg:px-8 h-12 md:px-4  w-60  md:w-80 rounded-xl bg-[#28a745] text-xs lg:text-base font-semibold text-white duration-300 ease-in-out hover:bg-[#218838]/80"
               >
                 🔥 Reserva tu clase de prueba gratis
               </Button>

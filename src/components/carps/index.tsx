@@ -21,7 +21,7 @@ const CarpsSkate: React.FC<CarpsSkateProps> = ({
     window.open("https://api.whatsapp.com/send/?phone=51945970045&text=🔥Deseo%20reservar%20una%20clase%20de%20prueba", "_blank"); // Cambia la ruta a la que deseas redirigir
   };
   return (
-    <section className="bg-[#E40032] text-white overflow-hidden">
+    <section className="bg-navBurger text-white overflow-hidden">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 px-4 md:px-8">
@@ -47,7 +47,8 @@ const CarpsSkate: React.FC<CarpsSkateProps> = ({
               <Button
                 onClick={handleClick}
                 variant="default"
-                className="bg-red-600 h-12 text-base text-white font-bold py-3 px-8 rounded-full hover:bg-red-700 transition duration-300 transform hover:scale-105" 
+                //className="bg-[#28a745] h-12 text-base text-white font-bold py-3 px-8 rounded-full hover:bg-red-700 transition duration-300 transform hover:scale-105" 
+                className="md:h-14 lg:px-8 h-12 md:px-4  w-60  md:w-80 rounded-full bg-[#f2f2f2] text-xs lg:text-base font-semibold text-black duration-300 ease-in-out hover:bg-[#f2f2f2]/80"
               >
                 ¡Únete a CARPS!
               </Button>
