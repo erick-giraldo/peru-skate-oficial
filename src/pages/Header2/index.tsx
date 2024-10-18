@@ -24,7 +24,8 @@ const NAV_ITEMS: NavItem[] = [
   {
     href: "#",
     label: "Clases",
-    sub_label: ["Classes", "Programas", "Servicios"],
+    subMenu: false,
+    subLabel: ["Classes", "Programas", "Servicios"],
   },
   { href: "#events", label: "Eventos" },
   { href: "#", label: "Productos" },
@@ -93,14 +94,14 @@ const MenuItems = () => (
   <div className="w-full">
     {NAV_ITEMS.map((item) => (
       <div key={item.label} className="relative group w-full">
-        {item.sub_label ? (
+        {item.subLabel ? (
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value={item.label} className="border-none">
               <AccordionTrigger className="font-dreadful flex items-center py-2 text-[1rem] font-semibold w-full hover:no-underline">
                 {item.label}
               </AccordionTrigger>
               <AccordionContent className="pl-4 font-dreadful ">
-                {item.sub_label.map((subItem, subIndex) => (
+                {item.subLabel.map((subItem, subIndex) => (
                   <Link
                     key={subIndex}
                     href={`${item.href}/${subItem.toLowerCase()}`}

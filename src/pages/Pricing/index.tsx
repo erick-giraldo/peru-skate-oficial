@@ -10,11 +10,11 @@ const Pricing = () => {
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
-      <SectionTitle
+        <SectionTitle
           title="Planes flexibles para tu desarrollo"
           paragraph="En PerúSkate, creemos que el skateboarding es más que un deporte; es una herramienta poderosa para el crecimiento personal y social. Nuestro Centro de Alto Rendimiento (CARPS) es el único espacio abierto al público donde podrás desarrollar tu máximo potencial en el skateboarding de manera segura y efectiva. Elige el plan que mejor se adapte a tus objetivos y comienza tu viaje hacia la excelencia en el skate."
           center
-          width="665px"
+          width="965px"
           fontTitle="font-dreadful"
         />
 
@@ -62,8 +62,12 @@ const Pricing = () => {
           <PricingBox
             packageName="Principiante"
             price={isMonthly ? "70" : "240"}
-            duration={isMonthly ? "mes" : ""}
-            subtitle={isMonthly ? "Inicia tu aventura en el mundo del skate." : "Paquete por 4 clases: Ideal para empezar."}
+            duration={isMonthly ? "clase" : ""}
+            subtitle={
+              isMonthly
+                ? "Inicia tu aventura en el mundo del skate."
+                : "Paquete por 4 clases: Ideal para empezar."
+            }
           >
             <OfferList text="3 sesiones semanales " status="active" />
             <OfferList text="Clases básicas" status="active" />
@@ -72,13 +76,21 @@ const Pricing = () => {
             <OfferList text="Cultura skate" status="active" />
             <OfferList text="Evaluación mensual" status="active" />
             <OfferList text="Comunidad de principiantes" status="active" />
-            <OfferList text="Durante el  primer mes se le presta todos los implementos" status="active"  classText='text-navBurger'/>
+            <OfferList
+              text="Durante el  primer mes se le presta todos los implementos"
+              status="active"
+              classText="text-navBurger"
+            />
           </PricingBox>
           <PricingBox
             packageName="Intermedio"
             price={isMonthly ? "70" : "400"}
-            duration={isMonthly ? "mes" : ""}
-            subtitle={isMonthly ? "Perfecciona tus habilidades y desafía tus límites." : "Paquete por 8 clases: Desarrolla tu técnica."}
+            duration={isMonthly ? "clase" : ""}
+            subtitle={
+              isMonthly
+                ? "Perfecciona tus habilidades y desafía tus límites."
+                : "Paquete por 8 clases: Desarrolla tu técnica."
+            }
           >
             <OfferList text="2 sesiones semanales" status="active" />
             <OfferList text="Técnicas avanzadas" status="active" />
@@ -87,25 +99,60 @@ const Pricing = () => {
             <OfferList text="Workshops creativos" status="active" />
             <OfferList text="Eventos locales" status="active" />
             <OfferList text="Asesoría personalizada" status="active" />
-            <OfferList text="Durante el  primer mes se le presta todos los implementos" status="active"  classText='text-navBurger'/>
+            <OfferList
+              text="Durante el  primer mes se le presta todos los implementos"
+              status="active"
+              classText="text-navBurger"
+            />
           </PricingBox>
           <PricingBox
             packageName="Pro"
             price={isMonthly ? "70" : "540"}
-            duration={isMonthly ? "mes" : ""}
-            subtitle={isMonthly ? "Alcanza tu máximo potencial y destaca en la escena." : "Paquete por 12 clases: Entrenamiento pro."}
-
+            duration={isMonthly ? "clase" : ""}
+            subtitle={
+              isMonthly
+                ? "Alcanza tu máximo potencial y destaca en la escena."
+                : "Paquete por 12 clases: Entrenamiento pro."
+            }
           >
-             <OfferList text="1 sesión semanal" status="active" />
+            <OfferList text="1 sesión semanal" status="active" />
             <OfferList text="Plan personalizado" status="active" />
-            <OfferList text="Acceso 24/7" status="active" />
+            <OfferList text="Equipo profesional" status="active" />
             <OfferList text="Prep. física y mental" status="active" />
             <OfferList text="Mentorías pro" status="active" />
             <OfferList text="Competiciones nacionales" status="active" />
             <OfferList text="Patrocinio potencial" status="active" />
-            <OfferList text="Durante el  primer mes se le presta todos los implementos" status="active"  classText='text-navBurger'/>
+            <OfferList
+              text="Durante el  primer mes se le presta todos los implementos"
+              status="active"
+              classText="text-navBurger"
+            />
           </PricingBox>
         </div>
+      </div>
+      <div className="mt-16 w-full bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+      <div className="container">
+            <h3 className="text-2xl font-bold mb-4 text-center">
+          Implementos a la Venta
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="bg-white dark:bg-gray-700 p-4 rounded-md shadow">
+            <h4 className="font-bold mb-2">Kit Completo de Protecciones</h4>
+            <p>Rodilleras, coderas y muñequeras</p>
+            <p className="font-semibold mt-2">Precio: S/350</p>
+          </div>
+          <div className="bg-white dark:bg-gray-700 p-4 rounded-md shadow">
+            <h4 className="font-bold mb-2">Casco Pro Protec</h4>
+            <p>Protección de calidad profesional</p>
+            <p className="font-semibold mt-2">Precio: S/220</p>
+          </div>
+          <div className="bg-white dark:bg-gray-700 p-4 rounded-md shadow">
+            <h4 className="font-bold mb-2">Skate Pro Completo</h4>
+            <p>Equipo profesional para tu entrenamiento</p>
+            <p className="font-semibold mt-2">Precio: S/450</p>
+          </div>
+        </div>
+            </div>
       </div>
 
       {/* <div className="absolute bottom-0 left-0 z-[-1]">

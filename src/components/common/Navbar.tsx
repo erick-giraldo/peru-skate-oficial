@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 import {
   Menubar,
   MenubarContent,
@@ -17,24 +17,26 @@ export const Navbar = ({ data }: { data: NavItem[] }) => {
   return (
     <Menubar className="border-none gap-14 font-dreadful ">
       {data.map((item, index) => (
-        <MenubarMenu key={index} >
-           <div
+        <MenubarMenu key={index}>
+          <div
             className="text-lg cursor-pointer"
             onClick={() => handleClick(item.href)}
           >
-          <MenubarTrigger className="text-[27px]">{item.label}</MenubarTrigger>
+            <MenubarTrigger className="text-[27px]">
+              {item.label}
+            </MenubarTrigger>
           </div>
-          {item.sub_label && (
+          {item.subMenu && item.subLabel && (
             <MenubarContent>
-              {item.sub_label.map((subItem, subIndex) => (
-                 <div
-                 key={subIndex}
-                 className="text-lg cursor-pointer"
-                 onClick={() => handleClick(item.href)}
-               >
-                <MenubarItem key={subIndex} className="text-lg">
-                  {subItem}
-                </MenubarItem>
+              {item.subLabel.map((subItem, subIndex) => (
+                <div
+                  key={subIndex}
+                  className="text-lg cursor-pointer"
+                  onClick={() => handleClick(item.href)}
+                >
+                  <MenubarItem key={subIndex} className="text-lg">
+                    {subItem}
+                  </MenubarItem>
                 </div>
               ))}
             </MenubarContent>
@@ -45,8 +47,8 @@ export const Navbar = ({ data }: { data: NavItem[] }) => {
   );
 };
 
-
-     {/*  <MenubarContent >
+{
+  /*  <MenubarContent >
                <MenubarItem>
                  New Tab <MenubarShortcut>⌘T</MenubarShortcut>
                </MenubarItem>
@@ -67,4 +69,5 @@ export const Navbar = ({ data }: { data: NavItem[] }) => {
                <MenubarItem>
                  Print... <MenubarShortcut>⌘P</MenubarShortcut>
                </MenubarItem> 
-             </MenubarContent>*/}
+             </MenubarContent>*/
+}

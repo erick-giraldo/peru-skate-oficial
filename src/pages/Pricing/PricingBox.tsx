@@ -6,7 +6,12 @@ const PricingBox = (props: {
   children: React.ReactNode;
 }) => {
   const { price, duration, packageName, subtitle, children } = props;
-
+  const handleClick = () => {
+    window.open(
+      "https://api.whatsapp.com/send/?phone=51945970045&text=🔥Deseo%20reservar%20una%20clase%20de%20prueba",
+      "_blank"
+    );
+  };
   return (
     <div className="w-full">
       <div className="relative z-10 rounded-sm bg-white px-8 py-10 shadow-three hover:shadow-one dark:bg-gray-dark dark:shadow-two dark:hover:shadow-gray-dark">
@@ -23,8 +28,11 @@ const PricingBox = (props: {
         </div>
         <p className="mb-7 text-base text-body-color">{subtitle}</p>
         <div className="mb-8 border-b border-body-color border-opacity-10 pb-8 dark:border-white dark:border-opacity-10">
-          <button className="flex w-full items-center justify-center rounded-sm bg-navBurger p-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-            Iniciar prueba gratuita
+          <button
+            onClick={handleClick}
+            className="animate-slow-pulse flex w-full items-center justify-center rounded-sm bg-navBurger p-3 text-base font-semibold text-white  hover:bg-opacity-80 hover:shadow-signUp"
+          >
+            ¡PROMOCIÓN POR WEB S/60.00!
           </button>
         </div>
         <div>{children}</div>

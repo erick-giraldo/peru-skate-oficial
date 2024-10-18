@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const NAV_ITEMS :NavItem[]= [
   { href: "#", label: "Home" },
-  { href: "#", label: "Clases", sub_label: ['Classes', 'Programas', 'Servicios']  },
+  { href: "#", label: "Clases", subLabel: ['Classes', 'Programas', 'Servicios']  },
   { href: "#", label: "Eventos"},
   { href: "#", label: "Videos" },
   { href: "#", label: "Contacto" },
@@ -234,14 +234,14 @@ const MenuItems = () => (
   <div className="w-full">
     {NAV_ITEMS.map((item) => (
       <div key={item.label} className="relative group w-full">
-        {item.sub_label ? (
+        {item.subLabel? (
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value={item.label} className="border-none">
               <AccordionTrigger className="flex items-center py-2 text-lg font-semibold w-full hover:no-underline">
                 {item.label}
               </AccordionTrigger>
               <AccordionContent className="pl-4">
-                {item.sub_label.map((subItem, subIndex) => (
+                {item.subLabel.map((subItem, subIndex) => (
                   <Link
                     key={subIndex}
                     href={`${item.href}/${subItem.toLowerCase()}`}
