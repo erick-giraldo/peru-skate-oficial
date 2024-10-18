@@ -21,7 +21,7 @@ const CarpsSkate: React.FC<CarpsSkateProps> = ({
     window.open("https://api.whatsapp.com/send/?phone=51945970045&text=🔥Deseo%20reservar%20una%20clase%20de%20prueba", "_blank"); // Cambia la ruta a la que deseas redirigir
   };
   return (
-    <section className="bg-navBurger text-white overflow-hidden">
+    <section className="bg-gradientCool text-white overflow-hidden">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 px-4 md:px-8">

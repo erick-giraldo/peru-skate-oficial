@@ -35,7 +35,10 @@ const config = {
       },
       backgroundImage: {
         'pl1': 'url(/images/pl2.jpg)',
-        'pl2': 'url(/images/tablas-varios.jpeg)'
+        'pl2': 'url(/images/tablas-varios.jpeg)',
+        gradientRed: 'linear-gradient(45deg, #FF3B30, #FF5E3A)',
+        gradientDark: 'linear-gradient(to bottom, #333333, #1A1A1A)',
+        gradientCool: 'linear-gradient(45deg, #ed281d, #d7978e)',
       },
       height: {
         '70vh': '70vh'
