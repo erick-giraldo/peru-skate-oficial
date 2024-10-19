@@ -137,17 +137,17 @@ const Pricing = () => {
             Implementos a la Venta
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="text-white p-4 rounded-md shadow bg-gradientDark">
+            <div className="text-white p-4 rounded-md">
               <h4 className="font-bold mb-2  md:text-[25px]">Kit Completo de Protecciones</h4>
               <p>Rodilleras, coderas y muñequeras</p>
               <p className="font-semibold mt-2">Precio: S/350</p>
             </div>
-            <div className="text-white p-4 rounded-md shadow bg-gradientDark">
+            <div className="text-white p-4 rounded-md">
               <h4 className="font-bold mb-2 md:text-[25px]">Casco Pro Protec</h4>
               <p>Protección de calidad profesional</p>
               <p className="font-semibold mt-2">Precio: S/250</p>
             </div>
-            <div className="text-white p-4 rounded-md shadow bg-gradientDark">
+            <div className="text-white p-4 rounded-md">
               <h4 className="font-bold mb-2 md:text-[25px]">Skate Pro Completo</h4>
               <p>Equipo profesional para tu entrenamiento</p>
               <p className="font-semibold mt-2">Precio: S/650</p>
