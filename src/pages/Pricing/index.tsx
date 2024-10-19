@@ -8,7 +8,7 @@ const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section id="pricing" className="relative z-10 pt-16 md:pt-20 lg:pt-28">
       <div className="container">
         <SectionTitle
           title="Planes flexibles para tu desarrollo"
@@ -28,7 +28,7 @@ const Pricing = () => {
                   : "text-dark dark:text-white"
               } mr-4 cursor-pointer text-base font-semibold`}
             >
-              Mensual
+              Clase
             </span>
             <div
               onClick={() => setIsMonthly(!isMonthly)}
@@ -69,13 +69,13 @@ const Pricing = () => {
                 : "Paquete por 4 clases: Ideal para empezar."
             }
           >
-            <OfferList text="3 sesiones semanales " status="active" />
+            <OfferList text="1 sesión semanal " status="active" />
             <OfferList text="Clases básicas" status="active" />
-            <OfferList text="Equipo estándar" status="active" />
-            <OfferList text="Equilibrio y coordinación" status="active" />
+            <OfferList text="Implementos de profesionles" status="active" />
+            <OfferList text="Confianza y coordinación" status="active" />
+            <OfferList text="Superación y autoestima" status="active" />
             <OfferList text="Cultura skate" status="active" />
-            <OfferList text="Evaluación mensual" status="active" />
-            <OfferList text="Comunidad de principiantes" status="active" />
+            <OfferList text="Desarrollo de vinculos sociales" status="active" />
             <OfferList
               text="Durante el  primer mes se le presta todos los implementos"
               status="active"
@@ -94,11 +94,11 @@ const Pricing = () => {
           >
             <OfferList text="2 sesiones semanales" status="active" />
             <OfferList text="Técnicas avanzadas" status="active" />
-            <OfferList text="Equipo profesional" status="active" />
-            <OfferList text="Entrenamiento físico" status="active" />
-            <OfferList text="Workshops creativos" status="active" />
+            <OfferList text="Implementos de profesionles" status="active" />
+            <OfferList text="Ejercicio de coordinación motriz" status="active" />
+            <OfferList text="Creatividad y perseverancia" status="active" />
             <OfferList text="Eventos locales" status="active" />
-            <OfferList text="Asesoría personalizada" status="active" />
+            <OfferList text="Clases en CARPS" status="active" />
             <OfferList
               text="Durante el  primer mes se le presta todos los implementos"
               status="active"
@@ -115,100 +115,46 @@ const Pricing = () => {
                 : "Paquete por 12 clases: Entrenamiento pro."
             }
           >
-            <OfferList text="1 sesión semanal" status="active" />
-            <OfferList text="Plan personalizado" status="active" />
-            <OfferList text="Equipo profesional" status="active" />
-            <OfferList text="Prep. física y mental" status="active" />
-            <OfferList text="Mentorías pro" status="active" />
-            <OfferList text="Competiciones nacionales" status="active" />
-            <OfferList text="Patrocinio potencial" status="active" />
+            <OfferList text="3 sesiónes semanales" status="active" />
+            <OfferList text="Plan personalizado y grupal" status="active" />
+            <OfferList text="Implementos de profesionles" status="active" />
+            <OfferList text="Prep. física y elasticidad motriz" status="active" />
+            <OfferList text="Técnicas avanzadas y de explosión muscular" status="active" />
+            <OfferList text="Preparación competitiva" status="active" />
+            <OfferList text="Competencias nacionales" status="active" />
             <OfferList
               text="Durante el  primer mes se le presta todos los implementos"
               status="active"
               classText="text-navBurger"
             />
           </PricingBox>
+          <div id="products"></div>
         </div>
       </div>
-      <div className="mt-16 w-full bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg">
-      <div className="container">
-            <h3 className="text-2xl font-bold mb-4 text-center">
-          Implementos a la Venta
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-white dark:bg-gray-700 p-4 rounded-md shadow">
-            <h4 className="font-bold mb-2">Kit Completo de Protecciones</h4>
-            <p>Rodilleras, coderas y muñequeras</p>
-            <p className="font-semibold mt-2">Precio: S/350</p>
-          </div>
-          <div className="bg-white dark:bg-gray-700 p-4 rounded-md shadow">
-            <h4 className="font-bold mb-2">Casco Pro Protec</h4>
-            <p>Protección de calidad profesional</p>
-            <p className="font-semibold mt-2">Precio: S/220</p>
-          </div>
-          <div className="bg-white dark:bg-gray-700 p-4 rounded-md shadow">
-            <h4 className="font-bold mb-2">Skate Pro Completo</h4>
-            <p>Equipo profesional para tu entrenamiento</p>
-            <p className="font-semibold mt-2">Precio: S/450</p>
-          </div>
-        </div>
+      <div className="mt-16 w-full bg-gradientCool dark:bg-gray-800 p-8 shadow-lg">
+        <div className="container">
+          <h3 className="text-3xl font-bold mb-4 text-center text-white font-dreadful md:text-[50px]">
+            Implementos a la Venta
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="text-white p-4 rounded-md shadow bg-gradientDark">
+              <h4 className="font-bold mb-2  md:text-[25px]">Kit Completo de Protecciones</h4>
+              <p>Rodilleras, coderas y muñequeras</p>
+              <p className="font-semibold mt-2">Precio: S/350</p>
             </div>
+            <div className="text-white p-4 rounded-md shadow bg-gradientDark">
+              <h4 className="font-bold mb-2 md:text-[25px]">Casco Pro Protec</h4>
+              <p>Protección de calidad profesional</p>
+              <p className="font-semibold mt-2">Precio: S/250</p>
+            </div>
+            <div className="text-white p-4 rounded-md shadow bg-gradientDark">
+              <h4 className="font-bold mb-2 md:text-[25px]">Skate Pro Completo</h4>
+              <p>Equipo profesional para tu entrenamiento</p>
+              <p className="font-semibold mt-2">Precio: S/650</p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      {/* <div className="absolute bottom-0 left-0 z-[-1]">
-        <svg
-          width="239"
-          height="601"
-          viewBox="0 0 239 601"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            opacity="0.3"
-            x="-184.451"
-            y="600.973"
-            width="196"
-            height="541.607"
-            rx="2"
-            transform="rotate(-128.7 -184.451 600.973)"
-            fill="url(#paint0_linear_93:235)"
-          />
-          <rect
-            opacity="0.3"
-            x="-188.201"
-            y="385.272"
-            width="59.7544"
-            height="541.607"
-            rx="2"
-            transform="rotate(-128.7 -188.201 385.272)"
-            fill="url(#paint1_linear_93:235)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_93:235"
-              x1="-90.1184"
-              y1="420.414"
-              x2="-90.1184"
-              y2="1131.65"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-            </linearGradient>
-            <linearGradient
-              id="paint1_linear_93:235"
-              x1="-159.441"
-              y1="204.714"
-              x2="-159.441"
-              y2="915.952"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div> */}
     </section>
   );
 };

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 
 interface CarpsSkateProps {
   title: string;
+  subTitle: string;
   description: string;
   benefits: string[];
   leftImage: string;
@@ -12,6 +13,7 @@ interface CarpsSkateProps {
 
 const CarpsSkate: React.FC<CarpsSkateProps> = ({
   title,
+  subTitle,
   description,
   benefits,
   leftImage,
@@ -25,8 +27,11 @@ const CarpsSkate: React.FC<CarpsSkateProps> = ({
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 px-4 md:px-8">
-            <h2 className="mb-4 text-center text-3xl font-bold !leading-tight text-white sm:text-4xl md:text-[50px] font-dreadful">
+            <h2 className="text-center text-3xl font-bold !leading-tight text-white sm:text-4xl md:text-[50px] font-dreadful">
               {title}
+            </h2>
+            <h2 className="mb-4 text-center text-3xl font-bold !leading-tight text-white sm:text-4xl md:text-[60px] font-dreadful">
+              {subTitle}
             </h2>
             <p className="text-lg mb-8">{description}</p>
 

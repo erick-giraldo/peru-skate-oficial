@@ -22,14 +22,14 @@ const NAV_ITEMS: NavItem[] = [
   { href: "#us", label: "Nosotros" },
 
   {
-    href: "#",
+    href: "#pricing",
     label: "Clases",
     subMenu: false,
     subLabel: ["Classes", "Programas", "Servicios"],
   },
   { href: "#events", label: "Eventos" },
-  { href: "#", label: "Productos" },
-  { href: "#", label: "Activaciones" },
+  { href: "#products", label: "Productos" },
+  // { href: "#", label: "Activaciones" },
 ];
 
 export default function Header2() {

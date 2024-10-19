@@ -17,7 +17,7 @@ const usData: Blog[] = [
   },
   {
     id: 2,
-    title: "Franco Ruiz Diaz: Experto en Técnicas avanzadas con pautas necesarias el cual brinda un mejor aprendizaje",
+    title: "Franco Ruiz Diaz: Especialista en distintas modalidades",
     paragraph:
       "Franco es un experto en skateboarding con una profunda comprensión de las técnicas técnicas avanzadas. Su habilidad para desglosar y enseñar habilidades complejas hace que cada sesión sea efectiva y valiosa, permitiendo a los estudiantes perfeccionar sus técnicas y desarrollar su estilo personal.",
     image: "/images/blog/franco_ruiz_diaz_2.png",

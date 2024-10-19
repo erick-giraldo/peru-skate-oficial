@@ -36,9 +36,7 @@ export default function Hero({ src }: HeroProps) {
         <div className="relative z-10 py-10 px-10">
           <div className="flex flex-col items-start sm:pr-[50%]">
             <h1 className="font-dreadful mb-5  leading-tight text-white text-[60px] sm:text-[60px] sm:leading-tight lg:text-[80px] xl:text-[111px] md:leading-tight">
-              {/* ¡Bienvenido, Rider! */}
               <Typewriter text="¡Bienvenido, Rider!" speed={150} />
-              {/* Clases de skateboarding en lima, perú */}
             </h1>
             <p className="mb-2 text-white text-body-color sm:text-2xl md:text-xl">
               ¡Desarrolla tus habilidades y destrezas al máximo! Ofrecemos

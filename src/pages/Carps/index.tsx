@@ -1,11 +1,11 @@
 import CarpsSkate from "@/components/carps";
 
 const Carps = () => {
-    const title = "Centro de Alto Rendimiento Perú Skate CARPS";
+    const title = "Centro de Alto Rendimiento PerúSkate";
+    const subTitle = "- CARPS -"
     const description = `
-      Teniendo en cuenta los grandes beneficios del skateboarding para niños, jóvenes y adultos, como la mejora en la coordinación,
-      resistencia y fuerza, así como el fomento de la autoestima y el control emocional, PerúSkate ha creado el CARPS, el único lugar
-      disponible al público para desarrollar el máximo potencial en este deporte mientras se evitan lesiones.
+      Teniendo en cuenta los grandes beneficios del skateboarding, PerúSkate ha creado CARPS, el único lugar
+      disponible al público para desarrollar el máximo potencial en este deporte, el cual esta construido de madera para mayor amortiguación del impacto y asi evitar lesiones
     `;
     const benefits = [
       "Mejora la coordinación, resistencia y fuerza.",
@@ -14,13 +14,14 @@ const Carps = () => {
       "Espacio seguro para evitar lesiones, gracias a materiales livianos como la madera.",
       "Desarrolla velocidad de reacción y fluidez en el skateboarding."
     ];
-    const leftImage = "/images/carps.jpeg";
-    const rightImage = "/images/carps2.jpeg";
+    const leftImage = "/images/carps2.jpeg";
+    const rightImage = "/images/carps.jpg";
   
     return (
       <div>
         <CarpsSkate 
-          title={title} 
+          title={title}
+          subTitle={subTitle}
           description={description} 
           benefits={benefits} 
           leftImage={leftImage}
