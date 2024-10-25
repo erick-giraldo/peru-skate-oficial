@@ -9,7 +9,7 @@ const InstagramAlbum: React.FC = () => {
   const [visiblePosts, setVisiblePosts] = useState<IInstagram[]>([]);
   const [loading, setLoading] = useState(true);
 
-  const imagePost = ["CAROUSEL_ALBUM", "IMAGE", ""];
+  const imagePost = ["CAROUSEL_ALBUM", "IMAGE"];
 
   useEffect(() => {
     const getPosts = async () => {
@@ -25,7 +25,7 @@ const InstagramAlbum: React.FC = () => {
           return post;
         });
         const newImagePosts = expandedPosts.filter(
-          (post) => !post.media_url.includes("flim17")
+          (post) => !post.media_url.includes("flim")
         );
         setPosts((newImagePosts as IInstagram[]).slice(0, 15));
         setVisiblePosts((newImagePosts as IInstagram[]).slice(0, 6));
