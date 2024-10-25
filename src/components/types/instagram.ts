@@ -4,11 +4,11 @@ export interface IInstagram {
     media_url: string
     permalink: string
     "media_type": "IMAGE" | "VIDEO" | "CAROUSEL_ALBUM",
-    children: Children
+    children: ChildrenPost
     timestamp: string
   }
   
-  export interface Children {
+  export interface ChildrenPost {
     data: Daum[]
   }
   

@@ -36,7 +36,7 @@ const CarpsSkate: React.FC<CarpsSkateProps> = ({
             <p className="text-lg mb-8">{description}</p>
 
             <div className="">
-              <h3 className="text-2xl font-semibold mb-4 font-dreadful">
+              <h3 className="text-2xl font-semibold mb-4 font-dreadful tracking-widest	">
                 Beneficios del Skateboarding:
               </h3>
               <ul className="space-y-2">
