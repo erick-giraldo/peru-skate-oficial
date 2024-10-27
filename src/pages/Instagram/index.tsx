@@ -20,7 +20,11 @@ const InstagramAlbum: React.FC = () => {
         );
         const expandedPosts = imagePosts.flatMap((post) => {
           if (post.media_type === "CAROUSEL_ALBUM" && post.children) {
-            return [post, ...post.children.data];
+            const childrenWithPermalink = post.children.data.map((child) => ({
+              ...child,
+              permalink: post.permalink
+            }));
+            return [post, ...childrenWithPermalink];
           }
           return post;
         });
@@ -35,9 +39,10 @@ const InstagramAlbum: React.FC = () => {
         setLoading(false);
       }
     };
-
+  
     getPosts();
   }, []);
+  
 
   const loadMore = () => {
     const currentLength = visiblePosts.length;
