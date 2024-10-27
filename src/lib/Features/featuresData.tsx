@@ -7,6 +7,8 @@ const featuresData: Feature[] = [
     title: "Tours Skaters",
     paragraph:
       "Disfruta de unas vacaciones únicas mientras aprendes en los mejores skateparks, desarrollando habilidades clave como el compañerismo, la empatía, la motivación en equipo y la perseverancia. Vive nuevas experiencias sobre ruedas mientras te diviertes y creces junto a otros apasionados del skate. ¡Únete a la aventura!",
+    animation:"fade-up"
+
   },
   {
     id: 2,
@@ -14,6 +16,7 @@ const featuresData: Feature[] = [
     title: "Competencias",
     paragraph:
       "Somos un equipo de profesionales altamente calificados, dedicados a formar nuevas generaciones de riders con un nivel de excelencia que nos posiciona año tras año entre los mejores en competencias a nivel nacional. Preparamos a nuestros deportistas para que se desarrollen como profesionales, brindándoles la confianza y el apoyo necesarios para participar en competiciones desde los 5 años de edad.",
+    animation:"fade-down"
   },
   {
     id: 3,
@@ -21,6 +24,7 @@ const featuresData: Feature[] = [
     title: "Instrucción Grupal y Personalizada",
     paragraph:
       "Enseñamos a niños, jóvenes y adultos desde los 5 años de edad, consolidando su seguridad, confianza y coordinación. Nuestro proceso de aprendizaje es 100% divertido y se adapta a tu propio ritmo. Te proporcionamos todos los implementos necesarios para que disfrutes al máximo de tus primeras clases. ¡Ven y comienza tu aventura en el skate con nosotros!",
+    animation:"fade-up"
   },
   // {
   //   id: 1,

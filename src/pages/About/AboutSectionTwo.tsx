@@ -9,10 +9,10 @@ const AboutSectionTwo = () => {
           <div className="w-full px-4 md:w-2/3">
             <div className="w-full">
               <div className="mb-9">
-                <h2 className="mb-4 text-3xl !leading-tight text-white sm:text-4xl md:text-[55px] font-dreadful">
+                <h2 data-aos="fade-up" className=" mb-4 text-3xl !leading-tight text-white sm:text-4xl md:text-[55px] font-dreadful">
                 Nuestra Historia
                 </h2>
-                <p className="text-base font-medium leading-relaxed text-white sm:text-lg sm:leading-relaxed">
+                <p data-aos="fade-right" className="text-base font-medium leading-relaxed text-white sm:text-lg sm:leading-relaxed">
                   En 2012, tres apasionados del skateboarding unieron sus
                   fuerzas para fundar nuestra escuela, con el objetivo de
                   impulsar el talento local y elevar el nivel de este deporte en
@@ -30,7 +30,7 @@ const AboutSectionTwo = () => {
                   deporte y el deseo de superación.
                 </p>
               </div>
-              <div className="mb-12 flex gap-8 px-4">
+              <div data-aos="fade-left" className="mb-12 flex gap-8 px-4">
                 <Avatar className="w-20 h-20">
                   <AvatarImage src="/images/franco.png" />
                 </Avatar>

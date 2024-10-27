@@ -2,10 +2,10 @@ import { Feature } from "@/components/types/feature";
 import Image from "next/image";
 
 const SingleFeature = ({ feature }: { feature: Feature }) => {
-  const { image, title, paragraph } = feature;
+  const { image, title, paragraph, animation } = feature;
   return (
     <div className="w-full">
-      <div className="wow fadeInUp" data-wow-delay=".15s">
+      <div data-aos={animation} className="wow fadeInUp" data-wow-delay=".15s">
         <div className="mb-10 flex items-center justify-center rounded-md bg-opacity-10 text-primary">
           <Image
             src={image}

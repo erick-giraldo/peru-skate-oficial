@@ -60,14 +60,14 @@ const CarpsSkate: React.FC<CarpsSkateProps> = ({
             </div>
           </div>
           <div className="flex flex-col md:w-1/2 mt-8">
-            <div className="w-full mt-8 md:mt-0">
+            <div data-aos="flip-down"  className="w-full mt-8 md:mt-0">
                 <img
                 src={rightImage}
                 alt="Skateboarder 2"
                 className="w-full h-80 object-cover transform rotate-3 shadow-lg border-8  border-white"
               />
             </div>
-            <div className="w-full mb-8 md:mb-0">
+            <div data-aos="flip-up"  className="w-full mb-8 md:mb-0">
               <img
                 src={leftImage}
                 alt="Skateboarder 1"
