@@ -3,6 +3,7 @@ import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
+import Image from "next/image";
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -96,7 +97,10 @@ const Pricing = () => {
             <OfferList text="2 sesiones semanales" status="active" />
             <OfferList text="Técnicas avanzadas" status="active" />
             <OfferList text="Implementos profesionales" status="active" />
-            <OfferList text="Ejercicio de coordinación motriz" status="active" />
+            <OfferList
+              text="Ejercicio de coordinación motriz"
+              status="active"
+            />
             <OfferList text="Creatividad y perseverancia" status="active" />
             <OfferList text="Eventos locales" status="active" />
             <OfferList text="Clases en CARPS" status="active" />
@@ -120,8 +124,14 @@ const Pricing = () => {
             <OfferList text="3 sesiones semanales" status="active" />
             <OfferList text="Plan personalizado y grupal" status="active" />
             <OfferList text="Implementos profesionales" status="active" />
-            <OfferList text="Preparación física y elasticidad motriz" status="active" />
-            <OfferList text="Técnicas avanzadas y explosión muscular" status="active" />
+            <OfferList
+              text="Preparación física y elasticidad motriz"
+              status="active"
+            />
+            <OfferList
+              text="Técnicas avanzadas y explosión muscular"
+              status="active"
+            />
             <OfferList text="Preparación competitiva" status="active" />
             <OfferList text="Competencias nacionales" status="active" />
             <OfferList
@@ -142,18 +152,56 @@ const Pricing = () => {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="text-white p-4 rounded-md">
-              <h4 className="font-bold mb-2 md:text-[25px]">Kit Completo de Protecciones</h4>
+              <div className="flex flex-col  gap-1">
+                <div className="self-center mr-8">
+                  <Image
+                    height={50}
+                    width={50}
+                    src={"/images/protectores-basic.png"}
+                    alt={"protectores"}
+                  />
+                </div>
+                <h4 className="font-bold mb-2 text-2xl">
+                  Kit Completo de Protecciones
+                </h4>
+              </div>
               <p>Rodilleras, coderas y muñequeras</p>
               <p className="font-semibold mt-2">Precio: S/350</p>
             </div>
             <div className="text-white p-4 rounded-md">
-              <h4 className="font-bold mb-2 md:text-[25px]">Casco Pro Protec</h4>
+            <div className="flex flex-col  gap-1">
+                <div className="self-center mr-8 p-1">
+                  <Image
+                    height={40}
+                    width={40}
+                    src={"/images/casco.png"}
+                    alt={"protectores"}
+                  />
+                </div>
+                <h4 className="font-bold mb-2 text-2xl">
+                  Casco Pro Protec
+                </h4>
+              </div>
               <p>Protección de calidad profesional</p>
               <p className="font-semibold mt-2">Precio: S/250</p>
             </div>
             <div className="text-white p-4 rounded-md">
-              <h4 className="font-bold mb-2 md:text-[25px]">Skate Pro Completo</h4>
-              <p>Equipo profesional para tu entrenamiento, piezas originales.</p>
+            <div className="flex flex-col  gap-1">
+                <div className="self-center mr-8 p-1">
+                  <Image
+                    height={40}
+                    width={40}
+                    src={"/images/protectores-full.png"}
+                    alt={"protectores"}
+                  />
+                </div>
+                <h4 className="font-bold mb-2 text-2xl">
+                  Skate Pro Completo
+                </h4>
+              </div>
+              <p>
+                Equipo profesional para tu entrenamiento, piezas originales.
+              </p>
               <p className="font-semibold mt-2">Precio: S/650</p>
             </div>
           </div>
