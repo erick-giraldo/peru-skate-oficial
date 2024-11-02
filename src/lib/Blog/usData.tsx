@@ -5,7 +5,7 @@ const usData: Blog[] = [
     id: 1,
     title: "Cesar Ruiz Diaz: Maestro en Técnicas Básicas y Avanzadas",
     paragraph:
-      "Cesar es un instructor altamente calificado en skateboarding, conocido por su habilidad para enseñar tanto técnicas básicas como avanzadas. Su enfoque meticuloso y su capacidad para adaptar las lecciones a diferentes niveles de habilidad aseguran que todos los estudiantes, sin importar su experiencia, puedan mejorar rápidamente.",
+    "Cesar es un experto en skateboarding con una profunda comprensión de las técnicas avanzadas. Su habilidad para desglosar y enseñar habilidades complejas hace que cada sesión sea efectiva y valiosa, permitiendo a los estudiantes perfeccionar sus técnicas y desarrollar su estilo personal.",
     image: "/images/blog/cesar_ruiz_2.png",
     author: {
       name: "Cesar Ruiz Diaz",
@@ -19,7 +19,7 @@ const usData: Blog[] = [
     id: 2,
     title: "Franco Ruiz Diaz: Especialista en distintas modalidades",
     paragraph:
-      "Franco es un experto en skateboarding con una profunda comprensión de las técnicas técnicas avanzadas. Su habilidad para desglosar y enseñar habilidades complejas hace que cada sesión sea efectiva y valiosa, permitiendo a los estudiantes perfeccionar sus técnicas y desarrollar su estilo personal.",
+    "Franco es un instructor altamente calificado en skateboarding, conocido por su habilidad para enseñar tanto técnicas básicas como avanzadas. Su enfoque meticuloso y su capacidad para adaptar las lecciones a diferentes niveles de habilidad aseguran que todos los estudiantes, sin importar su experiencia, puedan mejorar rápidamente.",
     image: "/images/blog/franco_ruiz_diaz_2.png",
     author: {
       name: "Franco Ruiz Diaz",

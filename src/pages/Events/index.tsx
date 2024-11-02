@@ -24,6 +24,13 @@ export default function Events() {
        address: 'San Borja'
     },
     {
+      image: "/images/events/eve7.jpg",
+      title: "Circuito FDNP ('Lucha Girl')",
+      sub: "23 April 2017",
+      description: "Descripción de la imagen 1",
+       address: 'San Borja'
+    },
+    {
       image: "/images/events/eve4.jpg",
       title: "Imagen 4",
       sub: "23 April 2017",
@@ -37,13 +44,14 @@ export default function Events() {
       description: "Descripción de la imagen 1",
        address: 'San Borja'
     },
-    {
-      image: "/images/events/eve6.jpg",
-      title: "Imagen 6",
-      sub: "23 April 2017",
-      description: "Descripción de la imagen 1",
-       address: 'San Borja'
-    },
+    // {
+    //   image: "/images/events/eve6.jpg",
+    //   title: "Imagen 6",
+    //   sub: "23 April 2017",
+    //   description: "Descripción de la imagen 1",
+    //    address: 'San Borja'
+    // },
+
   ];
   return (
     <section id="events" className="overflow-hidden py-16 md:py-20 lg:py-28">

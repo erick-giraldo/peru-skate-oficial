@@ -5,7 +5,7 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Musharof Chy",
+    name: "Edgard",
     designation: "Founder @TailGrids",
     content:
       "Entrenar en CARPS ha sido una experiencia increíble. Mis habilidades en el skate mejoraron rápidamente gracias al ambiente seguro y profesional. ¡Recomiendo 100%!",
@@ -14,7 +14,7 @@ const testimonialData: Testimonial[] = [
   },
   {
     id: 2,
-    name: "Devid Weilium",
+    name: "Karla",
     designation: "Founder @UIdeck",
     content:
       "Mis hijos han encontrado en el skateboarding una forma divertida de desarrollar confianza y coordinación. CARPS ha sido el lugar perfecto para ellos.",
@@ -23,7 +23,34 @@ const testimonialData: Testimonial[] = [
   },
   {
     id: 3,
-    name: "Lethium Frenci",
+    name: "Miguel",
+    designation: "Founder @Lineicons",
+    content:
+      "Mi experiencia en CARPS ha sido transformadora. No solo he mejorado mi técnica, sino que he desarrollado confianza y disciplina.",
+    image: "/images/testimonials/auth-03.png",
+    star: 5,
+  },
+  {
+    id: 4,
+    name: "Elena",
+    designation: "Founder @TailGrids",
+    content:
+      "Entrenar en CARPS ha sido una experiencia increíble. Mis habilidades en el skate mejoraron rápidamente gracias al ambiente seguro y profesional. ¡Recomiendo 100%!",
+    image: "/images/testimonials/auth-01.png",
+    star: 5,
+  },
+  {
+    id: 5,
+    name: "Jorge",
+    designation: "Founder @UIdeck",
+    content:
+      "Mis hijos han encontrado en el skateboarding una forma divertida de desarrollar confianza y coordinación. CARPS ha sido el lugar perfecto para ellos.",
+    image: "/images/testimonials/auth-02.png",
+    star: 5,
+  },
+  {
+    id: 6,
+    name: "Anaí",
     designation: "Founder @Lineicons",
     content:
       "Mi experiencia en CARPS ha sido transformadora. No solo he mejorado mi técnica, sino que he desarrollado confianza y disciplina.",

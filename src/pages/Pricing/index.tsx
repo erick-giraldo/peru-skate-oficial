@@ -64,6 +64,7 @@ const Pricing = () => {
             packageName="Principiante"
             price={isMonthly ? "70" : "240"}
             duration={isMonthly ? "clase" : ""}
+            promo={"¡PROMOCIÓN POR WEB S/60.00!"}
             subtitle={
               isMonthly
                 ? "Inicia tu aventura en el mundo del skate."
@@ -87,6 +88,7 @@ const Pricing = () => {
           <PricingBox
             packageName="Intermedio"
             price={isMonthly ? "70" : "400"}
+            promo={"¡PROMOCIÓN POR WEB S/60.00!"}
             duration={isMonthly ? "clase" : ""}
             subtitle={
               isMonthly
@@ -114,6 +116,7 @@ const Pricing = () => {
           <PricingBox
             packageName="Pro"
             price={isMonthly ? "70" : "540"}
+            promo={"¡PROMOCIÓN POR WEB S/60.00!"}
             duration={isMonthly ? "clase" : ""}
             subtitle={
               isMonthly
@@ -141,6 +144,55 @@ const Pricing = () => {
             />
           </PricingBox>
 
+          <PricingBox
+            packageName="Carps Pro"
+            price={isMonthly ? "80" : "280"}
+            promo={"¡PROMOCIÓN POR WEB S/70.00!"}
+            duration={isMonthly ? "clase" : ""}
+            subtitle={
+              isMonthly
+                ? "Implementa tu nivel pro skater."
+                : "Paquete por 4 clases: Ideal para empezar."
+            }
+          >
+            <OfferList text="1 sesión semanal" status="active" />
+            <OfferList text="Implementos profesionales" status="active" />
+            <OfferList text="Clases intensivas" status="active" />
+            <OfferList text="Superación y autoestima" status="active" />
+            <OfferList text="Cultura skate" status="active" />
+            <OfferList text="Desarrollo de vínculos sociales" status="active" />
+            <OfferList
+              text="Durante el primer mes se le prestan todos los implementos"
+              status="active"
+              classText="text-navBurger"
+            />
+          </PricingBox>
+
+          <PricingBox
+            packageName=""
+            showPrice={true}
+            price={isMonthly ? "Alquiler o eventos" : "Alquiler o eventos"}
+            promo={"COTIZA AQUI"}
+            duration={""}
+            subtitle={
+              isMonthly
+                ? "Celebra con nosotros."
+                : "Celebra con nosotros."
+            }
+          >
+            <OfferList text="1 sesión semanal" status="active" />
+            <OfferList text="Implementos profesionales" status="active" />
+            <OfferList text="Clases intensivas" status="active" />
+            <OfferList text="Superación y autoestima" status="active" />
+            <OfferList text="Cultura skate" status="active" />
+            <OfferList text="Desarrollo de vínculos sociales" status="active" />
+            <OfferList
+              text="Durante el primer mes se le prestan todos los implementos"
+              status="active"
+              classText="text-navBurger"
+            />
+          </PricingBox>
+
           <div id="products"></div>
         </div>
       </div>
@@ -155,8 +207,8 @@ const Pricing = () => {
               <div className="flex flex-col  gap-1">
                 <div className="self-center mr-8">
                   <Image
-                    height={50}
-                    width={50}
+                    height={70}
+                    width={70}
                     src={"/images/protectores-basic.png"}
                     alt={"protectores"}
                   />
@@ -172,8 +224,8 @@ const Pricing = () => {
             <div className="flex flex-col  gap-1">
                 <div className="self-center mr-8 p-1">
                   <Image
-                    height={40}
-                    width={40}
+                    height={60}
+                    width={60}
                     src={"/images/casco.png"}
                     alt={"protectores"}
                   />
@@ -190,8 +242,8 @@ const Pricing = () => {
                 <div className="self-center mr-8 p-1">
                   <Image
                     height={40}
-                    width={40}
-                    src={"/images/protectores-full.png"}
+                    width={60}
+                    src={"/images/patineta.png"}
                     alt={"protectores"}
                   />
                 </div>
