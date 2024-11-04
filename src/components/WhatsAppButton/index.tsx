@@ -5,7 +5,7 @@ export default function WhatsAppButton() {
   return (
     <FloatingWhatsApp  
     accountName="Perú Skate" 
-    phoneNumber="51945970045"
+    phoneNumber="51947353650"
     chatMessage="Hola somos Perú Skate, en que podemos ayudarte?"
     placeholder="Escribe un mensaje... "
     buttonClassName='mb-12 !right-6'

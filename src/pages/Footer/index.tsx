@@ -110,7 +110,7 @@ export default function Footer() {
                 <ul>
                   <li>
                     <Link
-                      href="/clases"
+                      href="#pricing"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Clases Personalizadas
@@ -118,7 +118,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      href="/cursos"
+                      href="#features"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Cursos de Skate
@@ -126,10 +126,10 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      href="/competencias"
+                      href="#events"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Preparación para Competencias
+                      Competencias
                     </Link>
                   </li>
                 </ul>
@@ -144,7 +144,7 @@ export default function Footer() {
                 <ul>
                   <li>
                     <Link
-                      href="/historia"
+                      href="#history"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Nuestra Historia
@@ -152,7 +152,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      href="/instructores"
+                      href="#us"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Instructores
@@ -160,7 +160,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      href="/carps"
+                      href="#carps"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       CARPS
@@ -178,7 +178,7 @@ export default function Footer() {
                 <ul>
                   <li>
                     <Link
-                      href="/reserva"
+                      href="https://api.whatsapp.com/send/?phone=51947353650&text=🔥Deseo%20reservar%20una%20clase%20de%20prueba"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Reserva tu Clase Gratis
@@ -186,7 +186,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      href="/ubicaciones"
+                      href="#contact"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Nuestras Ubicaciones
@@ -194,7 +194,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      href="/contacto"
+                      href="#contact"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Contáctanos

@@ -6,7 +6,6 @@ import Brands from "./Brands";
 import AboutSectionOne from "./About/AboutSectionOne";
 import AboutSectionTwo from "./About/AboutSectionTwo";
 import Blog from "./Blog";
-import Contact from "./Contact";
 import Pricing from "./Pricing";
 import ScrollUp from "@/components/common/ScrollUp";
 import ScrollToTop from "@/components/scrollToTop";
@@ -21,6 +20,7 @@ import Parallax from "./Parallax";
 import Loading from "@/components/loading";
 import { useEffect, useState } from "react";
 import Carps from "./Carps";
+import ContactPage from "./Contact";
 
 
 export default function Home() {
@@ -54,8 +54,8 @@ export default function Home() {
           <Carps />
           <Pricing />
           <Testimonials />
+          <ContactPage />
           <InstagramAlbum />
-          {/* <Contact /> */}
           {/* <Brands /> */}
           <Footer />
           <ScrollToTop />

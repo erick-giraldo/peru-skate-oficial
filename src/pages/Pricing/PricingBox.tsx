@@ -10,7 +10,7 @@ const PricingBox = (props: {
   const { price, duration, packageName, subtitle, children, promo, showPrice } = props;
   const handleClick = () => {
     window.open(
-      "https://api.whatsapp.com/send/?phone=51945970045&text=🔥Deseo%20reservar%20una%20clase%20de%20prueba",
+      "https://api.whatsapp.com/send/?phone=51947353650&text=🔥Deseo%20reservar%20una%20clase%20de%20prueba",
       "_blank"
     );
   };
